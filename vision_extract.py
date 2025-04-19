@@ -98,8 +98,11 @@ def resize_image_if_needed(image_path, max_size_mb=5):
         print(f"Error resizing image {image_path}: {e}")
         return image_path
 
-def extract_with_bedrock_claude(image_path, model_id="anthropic.claude-3-sonnet-20240229-v1:0"):
+def extract_with_bedrock_claude(image_path, model_id=None):
     """Extract data from image using Claude on AWS Bedrock."""
+    # Use model from environment if available, otherwise use default
+    if model_id is None:
+        model_id = os.environ.get('CLAUDE_MODEL_ID', "anthropic.claude-3-7-sonnet-20250219-v1:0")
     try:
         # Resize image if needed
         image_path = resize_image_if_needed(image_path)
@@ -344,8 +347,11 @@ def normalize_categories(offense):
     else:
         return "Other"
 
-def analyze_with_llm(records, model_id="anthropic.claude-3-sonnet-20240229-v1:0"):
+def analyze_with_llm(records, model_id=None):
     """Use Claude to analyze patterns in the data."""
+    # Use model from environment if available, otherwise use default
+    if model_id is None:
+        model_id = os.environ.get('CLAUDE_MODEL_ID', "anthropic.claude-3-7-sonnet-20250219-v1:0")
     try:
         # Create Bedrock client
         bedrock = boto3.client(

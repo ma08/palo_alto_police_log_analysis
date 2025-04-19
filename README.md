@@ -10,7 +10,7 @@ Our most recent analysis has identified:
 - **Areas with more incidents**: University Ave shows the highest incident rate and safety concern score
 - **Common incident types**: Mental health incidents and disturbances are most frequent, followed by theft
 
-> **UPDATE**: We've enhanced our data extraction capabilities with Claude Vision to better capture all incidents from the police report PDFs
+> **UPDATE**: We've enhanced our data extraction capabilities with Claude 3.7 Sonnet Vision to better capture all incidents from the police report PDFs
 
 ### Key Artifacts
 - [Safety Summary for House Hunting](results/summary_for_house_hunting.md) - Tailored recommendations for families
