@@ -122,24 +122,36 @@ def extract_with_bedrock_claude(image_path, model_id=None):
         
         # Construct prompt for Claude
         prompt = """
-        You are a data extraction expert. Extract all police incident data from this image into a structured format.
+        You are a data extraction expert. Extract ALL police incident records directly from the table in this image. 
         
-        Focus on extracting:
-        1. Case numbers
-        2. Dates
-        3. Times
-        4. Offense types
-        5. Locations
+        Look at the image carefully. The table has columns like CASE #, DATE, TIME, OFFENSE, LOCATION.
+        
+        IMPORTANT INSTRUCTIONS:
+        - Extract EXACTLY what you see in the table without making anything up
+        - Include every single row of actual incident data
+        - Do NOT include headers or empty rows
+        - COPY the text values EXACTLY as shown (including case numbers, dates, etc.)
         
         Format your response as a JSON array of objects with these fields:
-        - case_number: The case ID
-        - date: The date of the incident
-        - time: The time of the incident
-        - offense: The offense type or description 
-        - location: The location of the incident
+        - case_number: The exact text from the CASE # column
+        - date: The exact text from the DATE column
+        - time: The exact text from the TIME column  
+        - offense: The exact text from the OFFENSE column
+        - location: The exact text from the LOCATION column
         
-        Only include actual incidents from the table. Do not include any headers, footers, or other metadata.
-        Return ONLY the JSON array without any explanations or markdown formatting.
+        Example of correct extraction if you see this in the table:
+        25-01443 | 4/13/2025 | 1525 | Mental Health Evaluation | COWPER ST
+        
+        The JSON for that would be:
+        {
+          "case_number": "25-01443",
+          "date": "4/13/2025",
+          "time": "1525",
+          "offense": "Mental Health Evaluation",
+          "location": "COWPER ST"
+        }
+        
+        Return ONLY a valid JSON array with all the records. No explanations or text outside the JSON.
         """
         
         # Construct the request
@@ -188,7 +200,16 @@ def extract_with_bedrock_claude(image_path, model_id=None):
             
             # Parse the JSON
             data = json.loads(extracted_text)
-            return data
+            
+            # Filter out any header rows or incomplete data
+            filtered_data = []
+            for record in data:
+                # Skip records with case numbers like "ARREST CHARGES", "ARRES", etc.
+                if record.get('case_number') and len(record.get('case_number', '')) > 3:
+                    if not record.get('case_number').upper().startswith(('ARREST', 'CASE')):
+                        filtered_data.append(record)
+            
+            return filtered_data
         except json.JSONDecodeError:
             print(f"Error parsing JSON from Claude's response for {image_path}")
             print(f"Response: {extracted_text[:500]}...")
