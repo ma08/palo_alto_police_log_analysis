@@ -10,6 +10,8 @@ Our most recent analysis has identified:
 - **Areas with more incidents**: University Ave shows the highest incident rate and safety concern score
 - **Common incident types**: Mental health incidents and disturbances are most frequent, followed by theft
 
+> **UPDATE**: We've enhanced our data extraction capabilities with Claude Vision to better capture all incidents from the police report PDFs
+
 ### Key Artifacts
 - [Safety Summary for House Hunting](results/summary_for_house_hunting.md) - Tailored recommendations for families
 - [Safety Report](results/safety_report.md) - Detailed analysis of locations and incident types
@@ -31,11 +33,13 @@ Our most recent analysis has identified:
    - Reports cover the period from March 19 to April 18, 2025
 
 2. **Data Processing**:
-   - PDFs are parsed using pdfplumber to extract structured data
+   - **Vision-based extraction**: PDFs are converted to images and processed using Claude Vision on AWS Bedrock
+   - Fallback to traditional PDF parsing using pdfplumber when needed
    - Data is normalized and categorized by location and incident type
    - Streets and neighborhoods are identified from location data
 
-3. **Safety Analysis**:
+3. **LLM-Enhanced Analysis**:
+   - Claude used to identify patterns in semi-structured data
    - Safety scores calculated based on incident frequency and severity
    - Areas ranked by relative safety concerns
    - Time patterns analyzed (when available)
@@ -44,6 +48,7 @@ Our most recent analysis has identified:
    - Charts generated for incident locations and types
    - Safety report with neighborhood recommendations
    - Location safety analysis with weighted scoring
+   - LLM-generated insights for family-specific recommendations
 
 ## Setup
 
@@ -57,6 +62,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Configure AWS credentials for Claude Vision
+cp .env.example .env
+# Edit .env with your AWS credentials
 ```
 
 ## Usage
@@ -73,14 +82,22 @@ This will:
 3. Analyze the data and generate visualizations
 4. Create a safety report with recommendations
 
+For vision-based extraction using Claude (requires AWS credentials):
+
+```bash
+python vision_extract.py
+```
+
 Alternatively, you can run each step individually:
 
 ```bash
 # Step 1: Download reports
 python download_reports.py
 
-# Step 2: Extract data
+# Step 2: Extract data (traditional method)
 python extract_data.py
+# OR: Vision-based extraction (preferred)
+python vision_extract.py
 
 # Step 3: Analyze data
 python analyze_data.py
@@ -104,15 +121,19 @@ The analysis produces several outputs in the `results/` directory:
 ## Project Structure
 
 - `download_reports.py`: Downloads police report PDFs
-- `extract_data.py`: Extracts structured data from PDFs
+- `extract_data.py`: Traditional extraction of data from PDFs
+- `vision_extract.py`: Vision-based extraction using Claude on AWS Bedrock
 - `analyze_data.py`: Generates statistics and visualizations
 - `run_analysis.py`: Runs the entire pipeline
 - `data/`: Directory for downloaded PDFs and extracted data
   - `raw/`: Raw PDF files
+  - `images/`: Rendered PDF pages as images (for vision model)
   - `processed/`: Processed CSV data
 - `results/`: Analysis outputs and visualizations
 - `venv/`: Python virtual environment
 - `requirements.txt`: Required Python packages
+- `.env.example`: Example environment variables file
+- `.env`: Configuration for AWS credentials (not committed to Git)
 
 ## Data Sources
 
