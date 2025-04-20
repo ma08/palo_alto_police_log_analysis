@@ -131,6 +131,15 @@ Legacy outputs:
 - `requirements.txt`: Required Python packages
 - `.env`: Configuration for AWS credentials
 
+## Data Processing Notes
+
+- **Geocoding Script (`scripts/process_all_csvs.py`)**: 
+  - During the run on April 20, 2025, this script failed to process the following files due to parsing errors (incorrect number of fields detected on specific lines):
+    - `data/csv_files/april-17-2025-police-report-log.csv` (Error on line 14)
+    - `data/csv_files/march-31-2025-police-report-log.csv` (Error on line 6)
+  - These files were skipped, but the other 20 CSVs in the directory were successfully processed and saved to `data/processed_csv_files`.
+  - The geocoding results for successfully processed unique locations are cached in `data/geocoding_cache.json`.
+
 ## Data Sources
 
 All data is sourced from the [Palo Alto Police Department's public information portal](https://www.paloalto.gov/departments/police/public-information-portal/police-report-log), which provides police report logs for the last 30 days.

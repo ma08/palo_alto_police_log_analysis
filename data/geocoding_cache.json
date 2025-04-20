@@ -1,0 +1,6981 @@
+{
+  "131 FERNE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "131 Ferne Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.411040199999995,
+          "longitude": -122.11081970000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=551440421077637202",
+        "displayName": {
+          "text": "131 Ferne Ave"
+        }
+      }
+    ]
+  },
+  "2000 EDGEWOOD DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2000 Edgewood Dr, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.450374,
+          "longitude": -122.12730570000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=789563794662717059",
+        "displayName": {
+          "text": "2000 Edgewood Dr"
+        }
+      }
+    ]
+  },
+  "180 EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "180 El Camino Real, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.443646199999996,
+          "longitude": -122.16849889999997
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10694182497936204464",
+        "displayName": {
+          "text": "180 El Camino Real"
+        }
+      }
+    ]
+  },
+  ".2300 BIRCH ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "2300 Birch St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.42792,
+          "longitude": -122.1449046
+        },
+        "googleMapsUri": "https://maps.google.com/?q=2300+Birch+St,+Palo+Alto,+CA+94306,+USA&ftid=0x808fbae5ca74f36f:0x1b67db945fe1c7fb",
+        "displayName": {
+          "text": "2300 Birch St"
+        }
+      }
+    ]
+  },
+  "285 SAN ANTONIO AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "285 San Antonio Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4111792,
+          "longitude": -122.10727349999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16658977763059734121",
+        "displayName": {
+          "text": "285 San Antonio Ave"
+        }
+      }
+    ]
+  },
+  "3868 MAGNOLIA DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "3868 Magnolia Dr, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4145878,
+          "longitude": -122.1312889
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12782266767503957783",
+        "displayName": {
+          "text": "3868 Magnolia Dr"
+        }
+      }
+    ]
+  },
+  "360 COLLEGE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "360 College Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.428280799999996,
+          "longitude": -122.1462986
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5552424453942136444",
+        "displayName": {
+          "text": "360 College Ave"
+        }
+      }
+    ]
+  },
+  "200 PASTEUR DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "200 Pasteur Dr, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4337531,
+          "longitude": -122.1775506
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13079998141728758955",
+        "displayName": {
+          "text": "200 Pasteur Dr"
+        }
+      }
+    ]
+  },
+  "FOREST AVE/MIDDLEFIELD RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Middlefield Rd & Forest Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4491683,
+          "longitude": -122.15432989999998
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Middlefield+Rd+%26+Forest+Ave,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb3e534932f7:0xea1e737756bf430f",
+        "displayName": {
+          "text": "Middlefield Road & Forest Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "PASTEUR DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Pasteur Dr, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4336725,
+          "longitude": -122.1791063
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=6169494416735882827",
+        "displayName": {
+          "text": "Pasteur Drive",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "CURTNER AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Curtner Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4188948,
+          "longitude": -122.1305643
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14968705045571139156",
+        "displayName": {
+          "text": "Curtner Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "MIDDLEFIELD RD/MAYVIEW AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Middlefield Rd & Mayview Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.422674799999996,
+          "longitude": -122.11236659999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Middlefield+Rd+%26+Mayview+Ave,+Palo+Alto,+CA+94303,+USA&ftid=0x808fba6963cee9c9:0xbbabd0b5bc2bc997",
+        "displayName": {
+          "text": "Middlefield Road & Mayview Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "911 BRYANT ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "911 Bryant St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.442892,
+          "longitude": -122.15589829999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5459377244009753811",
+        "displayName": {
+          "text": "911 Bryant St"
+        }
+      }
+    ]
+  },
+  "E MEADOW CIR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "E Meadow Cir, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4312367,
+          "longitude": -122.1074736
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11004815764410248828",
+        "displayName": {
+          "text": "East Meadow Circle",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "200 CALIFORNIA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "200 California Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.428500899999996,
+          "longitude": -122.14337309999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=200+California+Ave,+Palo+Alto,+CA+94306,+USA&ftid=0x808fbae5077ceb2d:0x137f5fe86243ab61",
+        "displayName": {
+          "text": "200 California Ave"
+        }
+      }
+    ]
+  },
+  "824 BRYANT ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "824 Bryant St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4430674,
+          "longitude": -122.15750369999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4888713567299154989",
+        "displayName": {
+          "text": "824 Bryant St"
+        }
+      }
+    ]
+  },
+  "SENECA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Seneca St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4523705,
+          "longitude": -122.1531743
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8898853323137082672",
+        "displayName": {
+          "text": "Seneca Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "452 FERNE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "452 Ferne Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.414591699999995,
+          "longitude": -122.106503
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9376754807279114679",
+        "displayName": {
+          "text": "452 Ferne Ave"
+        }
+      }
+    ]
+  },
+  "4260 TERMAN DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "4260 Terman Dr, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4018071,
+          "longitude": -122.12718570000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12159087465606217991",
+        "displayName": {
+          "text": "4260 Terman Dr"
+        }
+      }
+    ]
+  },
+  "591 JACKSON DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "591 Jackson Dr, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4503694,
+          "longitude": -122.1326861
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12706758615162146758",
+        "displayName": {
+          "text": "591 Jackson Dr"
+        }
+      }
+    ]
+  },
+  "EL CAMINO REAL/MIDDLE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "El Camino Real & Middle Ave, Menlo Park, CA 94025, USA",
+        "location": {
+          "latitude": 37.4504117,
+          "longitude": -122.1772462
+        },
+        "googleMapsUri": "https://maps.google.com/?q=El+Camino+Real+%26+Middle+Ave,+Menlo+Park,+CA+94025,+USA&ftid=0x808fa4b374673f95:0x11cd9af3a6572b43",
+        "displayName": {
+          "text": "El Camino Real & Middle Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "GALVEZ ST/EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "El Camino Real & Galvez St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4373187,
+          "longitude": -122.1602327
+        },
+        "googleMapsUri": "https://maps.google.com/?q=El+Camino+Real+%26+Galvez+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb2451e36ec1:0x38e741690fdc138d",
+        "displayName": {
+          "text": "El Camino Real & Galvez Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "470 MATADERO AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "470 Matadero Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.419548,
+          "longitude": -122.13339209999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15734665055923993868",
+        "displayName": {
+          "text": "470 Matadero Ave"
+        }
+      }
+    ]
+  },
+  "2452 WATSON CT, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2452 Watson Ct, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4484607,
+          "longitude": -122.1205821
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8365710209272835743",
+        "displayName": {
+          "text": "2452 Watson Ct"
+        }
+      }
+    ]
+  },
+  "855 EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "855 El Camino Real, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4389939,
+          "longitude": -122.1588204
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11118077703284017645",
+        "displayName": {
+          "text": "855 El Camino Real"
+        }
+      }
+    ]
+  },
+  "722 ASHBY DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "722 Ashby Dr, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4524093,
+          "longitude": -122.14256669999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16946665163692467534",
+        "displayName": {
+          "text": "722 Ashby Dr"
+        }
+      }
+    ]
+  },
+  "1000 TANLAND DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "1000 Tanland Dr, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4429522,
+          "longitude": -122.12056020000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=1000+Tanland+Dr,+Palo+Alto,+CA+94303,+USA&ftid=0x808fbbacdd9e383b:0x55bdd7507ad7a0ff",
+        "displayName": {
+          "text": "1000 Tanland Dr"
+        }
+      }
+    ]
+  },
+  "480 E MEADOW DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "480 E Meadow Dr, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4213437,
+          "longitude": -122.11868120000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=22357886726615768",
+        "displayName": {
+          "text": "480 E Meadow Dr"
+        }
+      }
+    ]
+  },
+  "100 SANTA RITA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "100 Santa Rita Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4309462,
+          "longitude": -122.14411790000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=100+Santa+Rita+Ave,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbae38462280b:0x4270f461eaa7d062",
+        "displayName": {
+          "text": "100 Santa Rita Ave"
+        }
+      }
+    ]
+  },
+  "650 ADDISON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "650 Addison Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4459643,
+          "longitude": -122.1508148
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5219294379775897708",
+        "displayName": {
+          "text": "650 Addison Ave"
+        }
+      }
+    ]
+  },
+  "879 LOMA VERDE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "879 Loma Verde Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.432808099999995,
+          "longitude": -122.117804
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16012634385170397325",
+        "displayName": {
+          "text": "879 Loma Verde Ave"
+        }
+      }
+    ]
+  },
+  "2775 EMBARCADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2775 Embarcadero Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.459628099999996,
+          "longitude": -122.1063941
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16863978290233558804",
+        "displayName": {
+          "text": "2775 Embarcadero Rd"
+        }
+      }
+    ]
+  },
+  "2350 BIRCH ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "2350 Birch St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.42768040000001,
+          "longitude": -122.14446339999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=2350+Birch+St,+Palo+Alto,+CA+94306,+USA&ftid=0x808fbae5b7214d77:0xa97265441ad27b47",
+        "displayName": {
+          "text": "2350 Birch St"
+        }
+      }
+    ]
+  },
+  "757 TENNYSON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "757 Tennyson Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4415589,
+          "longitude": -122.13997040000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9296510258926984932",
+        "displayName": {
+          "text": "757 Tennyson Ave"
+        }
+      }
+    ]
+  },
+  "EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "El Camino Real, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.4203243,
+          "longitude": -122.1366538
+        },
+        "googleMapsUri": "https://maps.google.com/?q=El+Camino+Real,+Palo+Alto,+CA,+USA&ftid=0x808fcb0b782c489d:0x380db039ff6cae75",
+        "displayName": {
+          "text": "El Camino Real",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "356 IRIS WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "356 Iris Way, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4482208,
+          "longitude": -122.13261039999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13821446246599032561",
+        "displayName": {
+          "text": "356 Iris Way"
+        }
+      }
+    ]
+  },
+  "2727 MIDTOWN CT, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2727 Midtown Ct, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.434506,
+          "longitude": -122.1275342
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16824516795052090390",
+        "displayName": {
+          "text": "2727 Midtown Ct"
+        }
+      }
+    ]
+  },
+  "3000 ALEXIS DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3000 Alexis Dr, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.3739753,
+          "longitude": -122.17195249999997
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4769930203467316478",
+        "displayName": {
+          "text": "3000 Alexis Dr"
+        }
+      }
+    ]
+  },
+  "BYRON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Byron St, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.4351592,
+          "longitude": -122.1339506
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12326788350264137327",
+        "displayName": {
+          "text": "Byron Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "542 ADDISON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "542 Addison Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.444928399999995,
+          "longitude": -122.1516087
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9429936130935474488",
+        "displayName": {
+          "text": "542 Addison Ave"
+        }
+      }
+    ]
+  },
+  "251 LYTTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "251 Lytton Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4463844,
+          "longitude": -122.16354689999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3572005691908711346",
+        "displayName": {
+          "text": "251 Lytton Ave"
+        }
+      }
+    ]
+  },
+  "875 BLAKE WILBUR DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "875 Blake Wilbur Dr, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4357489,
+          "longitude": -122.1763127
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5702440941838653080",
+        "displayName": {
+          "text": "875 Blake Wilbur Dr"
+        }
+      }
+    ]
+  },
+  "69 ROOSEVELT CIR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "69 Roosevelt Cir, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4188954,
+          "longitude": -122.120466
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4859442316237720528",
+        "displayName": {
+          "text": "69 Roosevelt Cir"
+        }
+      }
+    ]
+  },
+  "EMERSON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Emerson St, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.433729,
+          "longitude": -122.1453989
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7217207255978246931",
+        "displayName": {
+          "text": "Emerson Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "50 EMBARCADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "50 Embarcadero Rd, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4374691,
+          "longitude": -122.157753
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2486590626818643138",
+        "displayName": {
+          "text": "50 Embarcadero Rd"
+        }
+      }
+    ]
+  },
+  ".2100 E BAYSHORE RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "2100 E Bayshore Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.452089,
+          "longitude": -122.1261702
+        },
+        "googleMapsUri": "https://maps.google.com/?q=2100+E+Bayshore+Rd,+Palo+Alto,+CA+94303,+USA&ftid=0x808fbba64c7b1b5f:0xe7072cd8b05c27f0",
+        "displayName": {
+          "text": "2100 E Bayshore Rd"
+        }
+      }
+    ]
+  },
+  "2277 BYRON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2277 Byron St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.436453,
+          "longitude": -122.13532869999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11449196810323400639",
+        "displayName": {
+          "text": "2277 Byron St"
+        }
+      }
+    ]
+  },
+  "ARASTRADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Arastradero Rd, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.391469,
+          "longitude": -122.1507128
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Arastradero+Rd,+Palo+Alto,+CA,+USA&ftid=0x808fbaa6cffbbee9:0xef6ecc8c88d70b7a",
+        "displayName": {
+          "text": "Arastradero Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "180 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "180 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4442649,
+          "longitude": -122.1624976
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11766582229427853489",
+        "displayName": {
+          "text": "180 University Ave"
+        }
+      }
+    ]
+  },
+  "3922 MIDDLEFIELD RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "3922 Middlefield Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4187416,
+          "longitude": -122.11010549999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10218850953901325291",
+        "displayName": {
+          "text": "3922 Middlefield Rd"
+        }
+      }
+    ]
+  },
+  "900BLK COMMERCIAL ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "real_estate_agency",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "730 Moreno Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4350151,
+          "longitude": -122.12986009999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13877056119207412650",
+        "displayName": {
+          "text": "Palo Alto Startup House of Silicon Valley",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "condominium_complex",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "149 California Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4283333,
+          "longitude": -122.14277779999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16010379442789943559",
+        "displayName": {
+          "text": "Palo Alto Central",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "49 Wells Ave 3rd floor, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.440888699999995,
+          "longitude": -122.16191189999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15034671859413514015",
+        "displayName": {
+          "text": "Palo Alto - 49 Wells Building",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "corporate_office",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "935 E Meadow Dr, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.429204999999996,
+          "longitude": -122.10730900000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12522297116346842307",
+        "displayName": {
+          "text": "Google EM935",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "4075 El Camino Way, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4154474,
+          "longitude": -122.1263005
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=967188095343169623",
+        "displayName": {
+          "text": "Palo Alto Commons",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "525 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4487297,
+          "longitude": -122.15968609999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16520925905988588696",
+        "displayName": {
+          "text": "Palo Alto Office Center",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "3000 El Camino Real Suite 700 Suite 700, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.420871999999996,
+          "longitude": -122.14129539999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10104807192553232031",
+        "displayName": {
+          "text": "Map",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "real_estate_agency",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "2100 Geng Rd Suite 210, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4510976,
+          "longitude": -122.1205771
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14464670716841326433",
+        "displayName": {
+          "text": "Regus - Palo Alto - Embarcadero Place",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "city_hall",
+          "local_government_office",
+          "government_office",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "250 Hamilton Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.444371,
+          "longitude": -122.15992430000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16561159434227753042",
+        "displayName": {
+          "text": "City of Palo Alto City Hall",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "corporate_office",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "3400 Hillview Ave, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.403644,
+          "longitude": -122.14833200000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15787161221115533585",
+        "displayName": {
+          "text": "Google Palo Alto",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_building",
+          "real_estate_agency",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "565 Arastradero Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4086412,
+          "longitude": -122.12409389999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=298318315200960329",
+        "displayName": {
+          "text": "Palo Alto Place Apartments",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "3101 Park Blvd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4252478,
+          "longitude": -122.13650439999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8992966064487868009",
+        "displayName": {
+          "text": "WeWork 3101 Park Blvd.",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_building",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "535 Arastradero Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4091087,
+          "longitude": -122.12367499999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16299389418850534615",
+        "displayName": {
+          "text": "Union Plaza Apartments",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "620 Sand Hill Rd, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.440410899999996,
+          "longitude": -122.17644649999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14673191083226453321",
+        "displayName": {
+          "text": "Vi at Palo Alto",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "corporate_office",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "3961 E Bayshore Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4304425,
+          "longitude": -122.10278359999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12730825542638449533",
+        "displayName": {
+          "text": "Google 3961",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "general_contractor",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "874 Boyce Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4508787,
+          "longitude": -122.1503808
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13322086395719641999",
+        "displayName": {
+          "text": "Palo Alto Building Company Inc",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "general_contractor",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "1900 University Ave, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.458933,
+          "longitude": -122.14289599999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1119633104446640300",
+        "displayName": {
+          "text": "University Circle - Leasing",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "park",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.446326899999995,
+          "longitude": -122.16298549999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10847789860046861092",
+        "displayName": {
+          "text": "Cogswell Plaza",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "555 Waverley St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4464612,
+          "longitude": -122.1591691
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14953405242821497697",
+        "displayName": {
+          "text": "Downtown Streets Team of Palo Alto",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "parking",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "344 Bryant St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4468186,
+          "longitude": -122.163541
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15999124782834507952",
+        "displayName": {
+          "text": "City Of Palo Alto",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "461 FERNE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "461 Ferne Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4148198,
+          "longitude": -122.10606829999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10630233141898087737",
+        "displayName": {
+          "text": "461 Ferne Ave"
+        }
+      }
+    ]
+  },
+  "3054 STELLING DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3054 Stelling Dr, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4340702,
+          "longitude": -122.1212415
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17892085202743765604",
+        "displayName": {
+          "text": "3054 Stelling Dr"
+        }
+      }
+    ]
+  },
+  "RAMONA ST/LYTTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Lytton Ave & Ramona St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.446103099999995,
+          "longitude": -122.16349389999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Lytton+Ave+%26+Ramona+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb377c27b449:0xef611ef3fbab5aed",
+        "displayName": {
+          "text": "Lytton Avenue & Ramona Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "431 EMERSON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "431 Emerson St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.445279,
+          "longitude": -122.1637312
+        },
+        "googleMapsUri": "https://maps.google.com/?q=431+Emerson+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb3766e306ed:0x4d6a52da6fc726ac",
+        "displayName": {
+          "text": "431 Emerson St"
+        }
+      }
+    ]
+  },
+  ".1700 EMBARCADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1700 Embarcadero Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4496093,
+          "longitude": -122.11893539999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3296326334424451493",
+        "displayName": {
+          "text": "1700 Embarcadero Rd"
+        }
+      }
+    ]
+  },
+  "325 CHANNING AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "325 Channing Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4433472,
+          "longitude": -122.1565906
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17271296085075920389",
+        "displayName": {
+          "text": "325 Channing Ave"
+        }
+      }
+    ]
+  },
+  "275 FOREST AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "275 Forest Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4442196,
+          "longitude": -122.15960210000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=95238810619628067",
+        "displayName": {
+          "text": "275 Forest Ave"
+        }
+      }
+    ]
+  },
+  "520 WEBSTER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "520 Webster St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4492396,
+          "longitude": -122.1577428
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3663014616781112621",
+        "displayName": {
+          "text": "520 Webster St"
+        }
+      }
+    ]
+  },
+  "445 BRYANT ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "445 Bryant St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.446657200000004,
+          "longitude": -122.1619412
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1487843547148381158",
+        "displayName": {
+          "text": "445 Bryant St"
+        }
+      }
+    ]
+  },
+  "432 HIGH ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "432 High St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.444407999999996,
+          "longitude": -122.164295
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9329736429663509788",
+        "displayName": {
+          "text": "432 High St"
+        }
+      }
+    ]
+  },
+  "3941 EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3941 El Camino Real, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.416466799999995,
+          "longitude": -122.1288737
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15812873170605210852",
+        "displayName": {
+          "text": "3941 El Camino Real"
+        }
+      }
+    ]
+  },
+  "456 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "456 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4476389,
+          "longitude": -122.15961420000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2321285137609900392",
+        "displayName": {
+          "text": "456 University Ave"
+        }
+      }
+    ]
+  },
+  "OREGON EXPR/ALMA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "condominium_complex",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "101 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4468394,
+          "longitude": -122.1681278
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17547375108891140604",
+        "displayName": {
+          "text": "Palo Alto Condominium Owner\u2019s Association",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_building",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "3051 Alma St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4236076,
+          "longitude": -122.1318288
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1168340560048005402",
+        "displayName": {
+          "text": "Alma Apartments",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "1869 Alma St #1967, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4327749,
+          "longitude": -122.14668089999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14021664824640186980",
+        "displayName": {
+          "text": "1869 Alma",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_complex",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "753 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.441731499999996,
+          "longitude": -122.1607109
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14767820560684894642",
+        "displayName": {
+          "text": "alma place",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "WELCH RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Welch Rd, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.4346638,
+          "longitude": -122.179252
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Welch+Rd,+Palo+Alto,+CA,+USA&ftid=0x808fa4d2c14cc1bd:0x686b8edefe119f33",
+        "displayName": {
+          "text": "Welch Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "SAN ANTONIO RD/E CHARLESTON RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "E Charleston Rd & San Antonio Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4218859,
+          "longitude": -122.10175479999998
+        },
+        "googleMapsUri": "https://maps.google.com/?q=E+Charleston+Rd+%26+San+Antonio+Rd,+Palo+Alto,+CA+94303,+USA&ftid=0x808fba1233145545:0x8470b64a58b2d577",
+        "displayName": {
+          "text": "East Charleston Road & San Antonio Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "FABER PL/EMBARCADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Faber Pl & Embarcadero Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4511591,
+          "longitude": -122.11733980000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Faber+Pl+%26+Embarcadero+Rd,+Palo+Alto,+CA+94303,+USA&ftid=0x808fbbb02e88c601:0xe6b94c8b43df247f",
+        "displayName": {
+          "text": "Faber Place & Embarcadero Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "1510 OAK CREEK DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "1510 Oak Creek Dr, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.433097499999995,
+          "longitude": -122.1862778
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=6296854961067232087",
+        "displayName": {
+          "text": "1510 Oak Creek Dr"
+        }
+      }
+    ]
+  },
+  "1085 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1085 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.455635,
+          "longitude": -122.15249580000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15206389508195436014",
+        "displayName": {
+          "text": "1085 University Ave"
+        }
+      }
+    ]
+  },
+  "MANUELA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Manuela Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.3948602,
+          "longitude": -122.1333584
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9592155113823386371",
+        "displayName": {
+          "text": "Manuela Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "ALMA ST / UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "bus_stop",
+          "transit_station",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4444357,
+          "longitude": -122.1649638
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3839466064336225447",
+        "displayName": {
+          "text": "Palo Alto Caltrain (Lytton & Alma)",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_complex",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "753 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.441731499999996,
+          "longitude": -122.1607109
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14767820560684894642",
+        "displayName": {
+          "text": "alma place",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "parking",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "392 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.444128899999995,
+          "longitude": -122.1653808
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12929063353690010942",
+        "displayName": {
+          "text": "Palo Alto Station",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "condominium_complex",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "101 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4468394,
+          "longitude": -122.1681278
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17547375108891140604",
+        "displayName": {
+          "text": "Palo Alto Condominium Owner\u2019s Association",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "sporting_goods_store",
+          "clothing_store",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "formattedAddress": "525 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4431563,
+          "longitude": -122.1629412
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=697323053463632287",
+        "displayName": {
+          "text": "Patagonia",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "parking",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "528 High St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4431212,
+          "longitude": -122.16320449999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17446817164298487999",
+        "displayName": {
+          "text": "High / Alma South Garage",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "consultant",
+          "establishment"
+        ],
+        "formattedAddress": "355 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4446514,
+          "longitude": -122.16548789999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3702722380292544494",
+        "displayName": {
+          "text": "Palo Alto Chamber of Commerce & Visitor Center",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "parking",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4420451,
+          "longitude": -122.16205049999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=18104049262777351484",
+        "displayName": {
+          "text": "Caltrain Parking",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "bus_stop",
+          "transit_station",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4444,
+          "longitude": -122.16497
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9282894555908942626",
+        "displayName": {
+          "text": "Lytton Ave & Alma St",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "car_repair",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "799 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.441388499999995,
+          "longitude": -122.16028980000002
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17213445395181027667",
+        "displayName": {
+          "text": "Palo Alto Bimmer",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "fire_station",
+          "government_office",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "301 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4451837,
+          "longitude": -122.16613439999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10409981958660100462",
+        "displayName": {
+          "text": "Palo Alto Fire Station 1",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_building",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "3051 Alma St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4236076,
+          "longitude": -122.1318288
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1168340560048005402",
+        "displayName": {
+          "text": "Alma Apartments",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "parking",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "528 High St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4432031,
+          "longitude": -122.1633178
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7805862622128802210",
+        "displayName": {
+          "text": "Palo Alto Garage R",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "1869 Alma St #1967, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4327749,
+          "longitude": -122.14668089999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14021664824640186980",
+        "displayName": {
+          "text": "1869 Alma",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "hardware_store",
+          "home_goods_store",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "formattedAddress": "875 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4406697,
+          "longitude": -122.15903809999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7214379191834701321",
+        "displayName": {
+          "text": "Hassett Ace Hardware",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "925 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.440082499999995,
+          "longitude": -122.15839210000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17448132719782132297",
+        "displayName": {
+          "text": "Venafi, Inc.",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "corporate_office",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "909 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4404027,
+          "longitude": -122.15868329999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12633974141269486706",
+        "displayName": {
+          "text": "Calm",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "pharmacy",
+          "health",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "formattedAddress": "217 Alma St Suite 200, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.445808299999996,
+          "longitude": -122.16722499999997
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5492339776132238391",
+        "displayName": {
+          "text": "Walgreens Specialty Pharmacy",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "539 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.442851,
+          "longitude": -122.16281289999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13825000346736648191",
+        "displayName": {
+          "text": "Pathlight",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "3445 Alma St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.418870399999996,
+          "longitude": -122.1245663
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=6660364103347178569",
+        "displayName": {
+          "text": "Alma Village",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "3223 HANOVER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3223 Hanover St, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4125515,
+          "longitude": -122.1426104
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12097414338835181698",
+        "displayName": {
+          "text": "3223 Hanover St"
+        }
+      }
+    ]
+  },
+  "EL CAMINO REAL/EMBARCADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "El Camino Real & Embarcadero Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.437312299999995,
+          "longitude": -122.15997739999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=El+Camino+Real+%26+Embarcadero+Rd,+Palo+Alto,+CA+94306,+USA&ftid=0x808fbb2451e36ec1:0xfae160bd3cafc1b",
+        "displayName": {
+          "text": "El Camino Real & Embarcadero Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "3233 HANOVER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "3233 Hanover St, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.411561999999996,
+          "longitude": -122.1443529
+        },
+        "googleMapsUri": "https://maps.google.com/?q=3233+Hanover+St,+Palo+Alto,+CA+94304,+USA&ftid=0x808fba93e4012847:0x3d136cc54ae76b5e",
+        "displayName": {
+          "text": "3233 Hanover St"
+        }
+      }
+    ]
+  },
+  "3085 E BAYSHORE RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "3085 E Bayshore Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4304674,
+          "longitude": -122.1014129
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12800891811103477375",
+        "displayName": {
+          "text": "3085 E Bayshore Rd"
+        }
+      }
+    ]
+  },
+  "EL CAMINO REAL/SAND HILL RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Sand Hill Rd & El Camino Real, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.446255099999995,
+          "longitude": -122.17106659999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Sand+Hill+Rd+%26+El+Camino+Real,+Palo+Alto,+CA+94304,+USA&ftid=0x808fbb3588ed2083:0xacdcefffd745805",
+        "displayName": {
+          "text": "Sand Hill Road & El Camino Real",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  ".1800 EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "1800 El Camino Real, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4299612,
+          "longitude": -122.1518535
+        },
+        "googleMapsUri": "https://maps.google.com/?q=1800+El+Camino+Real,+Palo+Alto,+CA+94306,+USA&ftid=0x808fbae0b6bb24bf:0x5727e0cae3627a4c",
+        "displayName": {
+          "text": "1800 El Camino Real"
+        }
+      }
+    ]
+  },
+  "701 EMERSON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "701 Emerson St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4431955,
+          "longitude": -122.15990160000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2813238522468909561",
+        "displayName": {
+          "text": "701 Emerson St"
+        }
+      }
+    ]
+  },
+  "4129 EL CAMINO WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "4129 El Camino Way, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4139994,
+          "longitude": -122.12442130000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=774006494078161656",
+        "displayName": {
+          "text": "4129 El Camino Way"
+        }
+      }
+    ]
+  },
+  "206 RAMONA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "206 Ramona St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.447398299999996,
+          "longitude": -122.1657912
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10368482174557741375",
+        "displayName": {
+          "text": "206 Ramona St"
+        }
+      }
+    ]
+  },
+  "845 RAMONA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "845 Ramona St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.442381399999995,
+          "longitude": -122.15728620000002
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12842435311134784521",
+        "displayName": {
+          "text": "845 Ramona St"
+        }
+      }
+    ]
+  },
+  "FOREST AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Forest Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4491683,
+          "longitude": -122.1543299
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13653085721536612868",
+        "displayName": {
+          "text": "Forest Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "240 PASTEUR DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "240 Pasteur Dr, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4328974,
+          "longitude": -122.1774393
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16726670519328160086",
+        "displayName": {
+          "text": "240 Pasteur Dr"
+        }
+      }
+    ]
+  },
+  "899 E CHARLESTON RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "899 E Charleston Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4222363,
+          "longitude": -122.1030933
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10541960684929834702",
+        "displayName": {
+          "text": "899 E Charleston Rd"
+        }
+      }
+    ]
+  },
+  "PISTACHE PL/EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "El Camino Real & Pistache Pl, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4456914,
+          "longitude": -122.17033239999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=El+Camino+Real+%26+Pistache+Pl,+Palo+Alto,+CA+94304,+USA&ftid=0x808fbb35c22fdd6d:0x7e84beb903d786e0",
+        "displayName": {
+          "text": "El Camino Real & Pistache Place",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "510 LYTTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "510 Lytton Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4490367,
+          "longitude": -122.16013590000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16127707690273164106",
+        "displayName": {
+          "text": "510 Lytton Ave"
+        }
+      }
+    ]
+  },
+  "540 BRYANT ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "540 Bryant St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.445239099999995,
+          "longitude": -122.16101919999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7237309208468963558",
+        "displayName": {
+          "text": "540 Bryant St"
+        }
+      }
+    ]
+  },
+  "850 BRYANT ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "850 Bryant St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4429691,
+          "longitude": -122.15744099999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=850+Bryant+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb3c83fa98af:0x89e518b69500980",
+        "displayName": {
+          "text": "850 Bryant St"
+        }
+      }
+    ]
+  },
+  "102 WALTER HAYS DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "102 Walter Hays Dr, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4446462,
+          "longitude": -122.13648219999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4164480243007308006",
+        "displayName": {
+          "text": "102 Walter Hays Dr"
+        }
+      }
+    ]
+  },
+  "250 HAMILTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "250 Hamilton Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.444215,
+          "longitude": -122.1596371
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8504657287920517765",
+        "displayName": {
+          "text": "250 Hamilton Ave"
+        }
+      }
+    ]
+  },
+  "528 HIGH ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "528 High St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.443379799999995,
+          "longitude": -122.16305589999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=18041740550203445373",
+        "displayName": {
+          "text": "528 High St"
+        }
+      }
+    ]
+  },
+  "CHURCHILL AVE/ALMA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Alma St & Churchill Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4356186,
+          "longitude": -122.1516012
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Alma+St+%26+Churchill+Ave,+Palo+Alto,+CA+94306,+USA&ftid=0x808fbb1f81fb91bd:0x60389d0e73564ecd",
+        "displayName": {
+          "text": "Alma Street & Churchill Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "270 FOREST AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "270 Forest Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.443864500000004,
+          "longitude": -122.1591268
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15309316706126398148",
+        "displayName": {
+          "text": "270 Forest Ave"
+        }
+      }
+    ]
+  },
+  "700 E CHARLESTON RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "700 E Charleston Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.420507199999996,
+          "longitude": -122.10827030000002
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=415966570215805198",
+        "displayName": {
+          "text": "700 E Charleston Rd"
+        }
+      }
+    ]
+  },
+  "ALMA ST/FOREST AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Forest Ave & Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4419064,
+          "longitude": -122.1615254
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Forest+Ave+%26+Alma+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb3af40808c1:0xd1d3e7a81b5d8d62",
+        "displayName": {
+          "text": "Forest Avenue & Alma Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "574 ARASTRADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "574 Arastradero Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4092668,
+          "longitude": -122.12637809999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=162037127346049883",
+        "displayName": {
+          "text": "574 Arastradero Rd"
+        }
+      }
+    ]
+  },
+  "1177 AMARILLO AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1177 Amarillo Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4450584,
+          "longitude": -122.12069369999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17493331118692785934",
+        "displayName": {
+          "text": "1177 Amarillo Ave"
+        }
+      }
+    ]
+  },
+  "EMBARCADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Embarcadero Rd, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.4457301,
+          "longitude": -122.1306756
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13727010580694448510",
+        "displayName": {
+          "text": "Embarcadero Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "1011 MORENO AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1011 Moreno Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4425849,
+          "longitude": -122.1234472
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11701404310876291063",
+        "displayName": {
+          "text": "1011 Moreno Ave"
+        }
+      }
+    ]
+  },
+  "171 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "171 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.444542,
+          "longitude": -122.16317529999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3663799386503035531",
+        "displayName": {
+          "text": "171 University Ave"
+        }
+      }
+    ]
+  },
+  "352 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "352 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4464306,
+          "longitude": -122.1605461
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13793715162782932768",
+        "displayName": {
+          "text": "352 University Ave"
+        }
+      }
+    ]
+  },
+  "2106 OBERLIN ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2106 Oberlin St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.421915899999995,
+          "longitude": -122.15249580000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3810816207443178708",
+        "displayName": {
+          "text": "2106 Oberlin St"
+        }
+      }
+    ]
+  },
+  "1560 SAND HILL RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1560 Sand Hill Rd, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4321384,
+          "longitude": -122.18688829999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14687464090596093708",
+        "displayName": {
+          "text": "1560 Sand Hill Rd"
+        }
+      }
+    ]
+  },
+  "MIDDLEFIELD RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Middlefield Rd, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.4483883,
+          "longitude": -122.1530899
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Middlefield+Rd,+Palo+Alto,+CA,+USA&ftid=0x808fa35b186a39fb:0x5984eee2a66a9cc2",
+        "displayName": {
+          "text": "Middlefield Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "1032 ELWELL CT, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "US-PAO-EW32, 1032 Elwell Ct, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.431965,
+          "longitude": -122.10301459999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12099400535542139267",
+        "displayName": {
+          "text": "US-PAO-EW32",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "490 CALIFORNIA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "490 California Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4254691,
+          "longitude": -122.1459088
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17278969293295857370",
+        "displayName": {
+          "text": "490 California Ave"
+        }
+      }
+    ]
+  },
+  "432 COLLEGE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "432 College Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.427334800000004,
+          "longitude": -122.14703739999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17179414158925171686",
+        "displayName": {
+          "text": "432 College Ave"
+        }
+      }
+    ]
+  },
+  "870 BOYCE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "870 Boyce Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4506084,
+          "longitude": -122.1505442
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=6041414844738140766",
+        "displayName": {
+          "text": "870 Boyce Ave"
+        }
+      }
+    ]
+  },
+  "290 LOWELL AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "290 Lowell Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.436194,
+          "longitude": -122.1466851
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=526072340099231121",
+        "displayName": {
+          "text": "290 Lowell Ave"
+        }
+      }
+    ]
+  },
+  "340 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "340 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4463033,
+          "longitude": -122.16065700000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4069877474299698672",
+        "displayName": {
+          "text": "340 University Ave"
+        }
+      }
+    ]
+  },
+  "4211 RICKEYS WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "4211 Rickeys Way, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.410274799999996,
+          "longitude": -122.12159750000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14876440871252856438",
+        "displayName": {
+          "text": "4211 Rickeys Way"
+        }
+      }
+    ]
+  },
+  "BRYANT ST/LYTTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Lytton Ave & Bryant St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4467061,
+          "longitude": -122.16289520000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Lytton+Ave+%26+Bryant+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb382c8316e9:0x2dd25110bf5b5f65",
+        "displayName": {
+          "text": "Lytton Avenue & Bryant Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "16 TULIP LN, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "16 Tulip Ln, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4476258,
+          "longitude": -122.1289991
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1217298588599576432",
+        "displayName": {
+          "text": "16 Tulip Ln"
+        }
+      }
+    ]
+  },
+  "168 WAVERLEY ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "168 Waverley St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.449715999999995,
+          "longitude": -122.16505699999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5867117236813743730",
+        "displayName": {
+          "text": "168 Waverley St"
+        }
+      }
+    ]
+  },
+  "HIGH ST/LYTTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "bus_stop",
+          "transit_station",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.444699,
+          "longitude": -122.16447300000002
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15760438884227995216",
+        "displayName": {
+          "text": "High & Lytton",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "289 DAVENPORT WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "289 Davenport Way, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.415771,
+          "longitude": -122.1234388
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15083609794891577360",
+        "displayName": {
+          "text": "289 Davenport Way"
+        }
+      }
+    ]
+  },
+  "753 ALMA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "753 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.441708999999996,
+          "longitude": -122.1606127
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9841470199571918057",
+        "displayName": {
+          "text": "753 Alma St"
+        }
+      }
+    ]
+  },
+  "BRYANT ST/HAMILTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Bryant St & Hamilton Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.445109099999996,
+          "longitude": -122.1603649
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Bryant+St+%26+Hamilton+Ave,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb397f9dedb3:0xa17bc1d8bcd06204",
+        "displayName": {
+          "text": "Bryant Street & Hamilton Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "200 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "200 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.444702,
+          "longitude": -122.162411
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14195623155327218602",
+        "displayName": {
+          "text": "200 University Ave"
+        }
+      }
+    ]
+  },
+  "800 EMERSON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "800 Emerson St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4420048,
+          "longitude": -122.15887629999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10429330485904332394",
+        "displayName": {
+          "text": "800 Emerson St"
+        }
+      }
+    ]
+  },
+  "758 BARRON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "758 Barron Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4142771,
+          "longitude": -122.13539529999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11078469508970411412",
+        "displayName": {
+          "text": "758 Barron Ave"
+        }
+      }
+    ]
+  },
+  "OREGON EXPWY / ALMA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "bus_stop",
+          "transit_station",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.423429999999996,
+          "longitude": -122.14236000000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13785117560433563486",
+        "displayName": {
+          "text": "On El Camino Real NB @ Oregon Expressway",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "condominium_complex",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "101 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4468394,
+          "longitude": -122.1681278
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17547375108891140604",
+        "displayName": {
+          "text": "Palo Alto Condominium Owner\u2019s Association",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "2900BLK E BAYSHORE RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "apartment_complex",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "1805 E Bayshore Rd # 100, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4568152,
+          "longitude": -122.1334446
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16700829852346721852",
+        "displayName": {
+          "text": "Light Tree Apartments",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "mobile_home_park",
+          "rv_park",
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "1885 E Bayshore Rd #93, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.455752,
+          "longitude": -122.1305596
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1209573598696581825",
+        "displayName": {
+          "text": "Palo Mobile Estates",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "storage",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "formattedAddress": "2047 E Bayshore Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4524726,
+          "longitude": -122.1263005
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11686554841844872322",
+        "displayName": {
+          "text": "Public Storage",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "storage",
+          "moving_company",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "formattedAddress": "999 E Bayshore Rd, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.46749,
+          "longitude": -122.151778
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2041730171989581187",
+        "displayName": {
+          "text": "Extra Space Storage",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "storage",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "formattedAddress": "1961 E Bayshore Rd, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.45436780000001,
+          "longitude": -122.12914479999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9972878617789834079",
+        "displayName": {
+          "text": "Public Storage",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "2479 E Bayshore Rd # 704, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4484889,
+          "longitude": -122.1187755
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16431181374361421412",
+        "displayName": {
+          "text": "Embarcadero Corporate Center",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "storage",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "formattedAddress": "1985 E Bayshore Rd, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4539563,
+          "longitude": -122.1281417
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13076820537874790414",
+        "displayName": {
+          "text": "Public Storage",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Dining Area, 1700 E Bayshore Rd, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4606667,
+          "longitude": -122.1386389
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17287759070977090262",
+        "displayName": {
+          "text": "Click & Collect Order Pick-up Counter at IKEA East Palo Alto",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "2479 E Bayshore Rd #110, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4483486,
+          "longitude": -122.1185998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11757030005983520010",
+        "displayName": {
+          "text": "InnoPeak Technology, Inc.",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "clothing_store",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "formattedAddress": "1489 E Bayshore Rd, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4631342,
+          "longitude": -122.14445990000002
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14166237449155530829",
+        "displayName": {
+          "text": "Kings Smoke Shop & clothing",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "furniture_store",
+          "home_improvement_store",
+          "home_goods_store",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "formattedAddress": "1700 E Bayshore Rd, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4610567,
+          "longitude": -122.139374
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12325730398599138577",
+        "displayName": {
+          "text": "IKEA",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_building",
+          "apartment_complex",
+          "local_government_office",
+          "government_office",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "1730 Bay Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.471267000000005,
+          "longitude": -122.136957
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4001803863378156382",
+        "displayName": {
+          "text": "Courtyard at Bay Road",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_complex",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "2400 Gloria Way, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.472043600000006,
+          "longitude": -122.1416644
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2236378663221665253",
+        "displayName": {
+          "text": "Bay Oak Apartments",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "fire_station",
+          "government_office",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "1870 W Bayshore Rd, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4541761,
+          "longitude": -122.1312473
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10330301436729069214",
+        "displayName": {
+          "text": "Ace Fire Equipment & Service Co., Inc.",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_complex",
+          "apartment_building",
+          "real_estate_agency",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "1094 Tanland Dr, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4436795,
+          "longitude": -122.1202093
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17598857714087575465",
+        "displayName": {
+          "text": "Parker Palo Alto Apartments",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "real_estate_agency",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "2100 Geng Rd Suite 210, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4510976,
+          "longitude": -122.1205771
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14464670716841326433",
+        "displayName": {
+          "text": "Regus - Palo Alto - Embarcadero Place",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "real_estate_agency",
+          "consultant",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "2225 E Bayshore Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.449965,
+          "longitude": -122.12097639999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14397297450252112324",
+        "displayName": {
+          "text": "Bayshore Bio",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "3921 E Bayshore Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.430893,
+          "longitude": -122.1033383
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3555191840910765680",
+        "displayName": {
+          "text": "WikiCharities",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "local_government_office",
+          "government_office",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "3201 E Bayshore Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4391089,
+          "longitude": -122.1111704
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11730698885394250291",
+        "displayName": {
+          "text": "Street Division",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "STANFORD AVE/WELLESLEY ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Stanford Ave & Wellesley St, Stanford, CA 94305, USA",
+        "location": {
+          "latitude": 37.424807099999995,
+          "longitude": -122.15169230000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Stanford+Ave+%26+Wellesley+St,+Stanford,+CA+94305,+USA&ftid=0x808fbae78b2b6a67:0xae9006fc3b86c5b2",
+        "displayName": {
+          "text": "Stanford Avenue & Wellesley Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "423 ALMA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "423 Alma St, Menlo Park, CA 94025, USA",
+        "location": {
+          "latitude": 37.450664700000004,
+          "longitude": -122.17522740000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=423+Alma+St,+Menlo+Park,+CA+94025,+USA&ftid=0x808fa4b345785f41:0xc5fc29fd23f78918",
+        "displayName": {
+          "text": "423 Alma St"
+        }
+      }
+    ]
+  },
+  "ALMA ST/N CALIFORNIA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "N California Ave & Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.429650099999996,
+          "longitude": -122.14207789999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=N+California+Ave+%26+Alma+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbae4e849aa23:0xfabb5271b564b5ba",
+        "displayName": {
+          "text": "North California Avenue & Alma Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "EMBARCADERO RD/EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "El Camino Real & Embarcadero Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.437312299999995,
+          "longitude": -122.15997739999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=El+Camino+Real+%26+Embarcadero+Rd,+Palo+Alto,+CA+94306,+USA&ftid=0x808fbb2451e36ec1:0xfae160bd3cafc1b",
+        "displayName": {
+          "text": "El Camino Real & Embarcadero Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "ALMA ST/E CHARLESTON RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "E Charleston Rd & Alma St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.414802099999996,
+          "longitude": -122.11848239999998
+        },
+        "googleMapsUri": "https://maps.google.com/?q=E+Charleston+Rd+%26+Alma+St,+Palo+Alto,+CA+94306,+USA&ftid=0x808fba65518a94fd:0x85f5f8408949eb15",
+        "displayName": {
+          "text": "East Charleston Road & Alma Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "2721 MIDTOWN CT, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2721 Midtown Ct, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.434220599999996,
+          "longitude": -122.12824309999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12995483076315022779",
+        "displayName": {
+          "text": "2721 Midtown Ct"
+        }
+      }
+    ]
+  },
+  "901 HUTCHINSON AVENUE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "901 Hutchinson Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.448524899999995,
+          "longitude": -122.14251929999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4148694131816349605",
+        "displayName": {
+          "text": "901 Hutchinson Ave"
+        }
+      }
+    ]
+  },
+  "400 RAMONA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "400 Ramona St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.446026499999995,
+          "longitude": -122.16371029999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15503136705057444658",
+        "displayName": {
+          "text": "400 Ramona St"
+        }
+      }
+    ]
+  },
+  "649 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "649 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4503588,
+          "longitude": -122.15787429999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11343332547593014754",
+        "displayName": {
+          "text": "649 University Ave"
+        }
+      }
+    ]
+  },
+  "3000 HANOVER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "3000 Hanover St, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4153216,
+          "longitude": -122.14667139999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10657736251422685783",
+        "displayName": {
+          "text": "3000 Hanover St"
+        }
+      }
+    ]
+  },
+  "JUNIPERO SERRA BLVD/PAGE MILL RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Junipero Serra Blvd & Page Mill Rd, California 94304, USA",
+        "location": {
+          "latitude": 37.4063465,
+          "longitude": -122.15601369999997
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Junipero+Serra+Blvd+%26+Page+Mill+Rd,+California+94304,+USA&ftid=0x808fbabc4398f309:0x5c497d0e63b000fb",
+        "displayName": {
+          "text": "Junipero Serra Boulevard & Page Mill Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "441 MATADERO AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "441 Matadero Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4196615,
+          "longitude": -122.13272659999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11181612880990212352",
+        "displayName": {
+          "text": "441 Matadero Ave"
+        }
+      }
+    ]
+  },
+  "2000 E BAYSHORE RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "2000 E Bayshore Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.452252699999995,
+          "longitude": -122.1264177
+        },
+        "googleMapsUri": "https://maps.google.com/?q=2000+E+Bayshore+Rd,+Palo+Alto,+CA+94303,+USA&ftid=0x808fbba7ad5e431d:0x733ebcdd2e8dc12",
+        "displayName": {
+          "text": "2000 E Bayshore Rd"
+        }
+      }
+    ]
+  },
+  "GREER RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Greer Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4404001,
+          "longitude": -122.1207308
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4353979339181900358",
+        "displayName": {
+          "text": "Greer Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "391 CAMBRIDGE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "391 Cambridge Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4272427,
+          "longitude": -122.1454607
+        },
+        "googleMapsUri": "https://maps.google.com/?q=391+Cambridge+Ave,+Palo+Alto,+CA+94306,+USA&ftid=0x808fbae5c5642c51:0x80e6979bc861d08b",
+        "displayName": {
+          "text": "391 Cambridge Ave"
+        }
+      }
+    ]
+  },
+  "200 HAMILTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "200 Hamilton Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.443918599999996,
+          "longitude": -122.16130480000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8622315635495800425",
+        "displayName": {
+          "text": "200 Hamilton Ave"
+        }
+      }
+    ]
+  },
+  "UNIVERSITY AVE/CRESCENT DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "bus_stop",
+          "transit_station",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.456047999999996,
+          "longitude": -122.145091
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=18065327201607963985",
+        "displayName": {
+          "text": "University Ave & Crescent Dr",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "300 BRADFORD ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "300 Bradford St, Redwood City, CA 94063, USA",
+        "location": {
+          "latitude": 37.487886499999995,
+          "longitude": -122.23157549999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11820836905712771281",
+        "displayName": {
+          "text": "300 Bradford St"
+        }
+      }
+    ]
+  },
+  "895 COMMERCIAL ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "895 Commercial St, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4228686,
+          "longitude": -122.10056000000002
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2488060281340943517",
+        "displayName": {
+          "text": "895 Commercial St"
+        }
+      }
+    ]
+  },
+  "BIRCH ST/CALIFORNIA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Birch St & California Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4274176,
+          "longitude": -122.1440038
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Birch+St+%26+California+Ave,+Palo+Alto,+CA+94306,+USA&ftid=0x808fbae5a35ff0d3:0x19ec134773a8a236",
+        "displayName": {
+          "text": "Birch Street & California Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "3478 KENNETH DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3478 Kenneth Dr, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4321166,
+          "longitude": -122.11080539999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17666554977374286980",
+        "displayName": {
+          "text": "3478 Kenneth Dr"
+        }
+      }
+    ]
+  },
+  "EMBARCADERO RD/NEWELL RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Newell Rd & Embarcadero Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4431419,
+          "longitude": -122.13973299999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Newell+Rd+%26+Embarcadero+Rd,+Palo+Alto,+CA+94303,+USA&ftid=0x808fbb04c5e10d37:0x59adaca885c7db6d",
+        "displayName": {
+          "text": "Newell Road & Embarcadero Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "220 HAMILTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "220 Hamilton Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4441136,
+          "longitude": -122.16116509999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12403082246926528248",
+        "displayName": {
+          "text": "220 Hamilton Ave"
+        }
+      }
+    ]
+  },
+  "461 FLORENCE ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "461 Florence St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4467928,
+          "longitude": -122.1611652
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7552541030555841600",
+        "displayName": {
+          "text": "461 Florence St"
+        }
+      }
+    ]
+  },
+  "256 LYTTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "256 Lytton Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.446717899999996,
+          "longitude": -122.1625519
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1987857654895880064",
+        "displayName": {
+          "text": "256 Lytton Ave"
+        }
+      }
+    ]
+  },
+  "RAMONA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Ramona St, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.4319779,
+          "longitude": -122.1410731
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5572216371429712206",
+        "displayName": {
+          "text": "Ramona Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "COWPER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Cowper St, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.4373463,
+          "longitude": -122.1418129
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3072176159378449215",
+        "displayName": {
+          "text": "Cowper Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "MELVILLE AVE/CHANNING AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Channing Ave & Melville Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.448791899999996,
+          "longitude": -122.14641040000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Channing+Ave+%26+Melville+Ave,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb16acf64b3f:0xbee9b4ab238b0cc9",
+        "displayName": {
+          "text": "Channing Avenue & Melville Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "1004 EMERSON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1004 Emerson St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4405583,
+          "longitude": -122.1565816
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3771266971571700389",
+        "displayName": {
+          "text": "1004 Emerson St"
+        }
+      }
+    ]
+  },
+  "1450 OAK CREEK DRIVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1450 Oak Creek Dr, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4334051,
+          "longitude": -122.185222
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2295125569807821704",
+        "displayName": {
+          "text": "1450 Oak Creek Dr"
+        }
+      }
+    ]
+  },
+  "LAGUNA CT, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Laguna Ct, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4118204,
+          "longitude": -122.1390863
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16928786113877617486",
+        "displayName": {
+          "text": "Laguna Court",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "PASTEUR DR/SAND HILL RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Sand Hill Rd & Pasteur Dr, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4346756,
+          "longitude": -122.18210160000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Sand+Hill+Rd+%26+Pasteur+Dr,+Palo+Alto,+CA+94304,+USA&ftid=0x808fa4ce3ed6e4b9:0x94f501986a993c9b",
+        "displayName": {
+          "text": "Sand Hill Road & Pasteur Drive",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "774 EMERSON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "774 Emerson St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4424053,
+          "longitude": -122.15961469999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=706819191845704013",
+        "displayName": {
+          "text": "774 Emerson St"
+        }
+      }
+    ]
+  },
+  "CLARK WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Clark Way, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4389292,
+          "longitude": -122.1781673
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9939966000044919678",
+        "displayName": {
+          "text": "Clark Way",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "933 OREGON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "933 Oregon Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4417292,
+          "longitude": -122.1277686
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11182683364776641282",
+        "displayName": {
+          "text": "933 Oregon Ave"
+        }
+      }
+    ]
+  },
+  "2301 ROSS RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2301 Ross Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4389798,
+          "longitude": -122.1317454
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17482029773136078763",
+        "displayName": {
+          "text": "2301 Ross Rd"
+        }
+      }
+    ]
+  },
+  "4000 MIDDLEFIELD RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "4000 Middlefield Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.418385799999996,
+          "longitude": -122.1083869
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13577840906777621857",
+        "displayName": {
+          "text": "4000 Middlefield Rd"
+        }
+      }
+    ]
+  },
+  "3289 SOUTH CT, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3289 South Ct, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.423795,
+          "longitude": -122.12525209999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12694987386754791132",
+        "displayName": {
+          "text": "3289 South Ct"
+        }
+      }
+    ]
+  },
+  "1410 DANA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1410 Dana Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4530551,
+          "longitude": -122.14254999999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3066620755893335512",
+        "displayName": {
+          "text": "1410 Dana Ave"
+        }
+      }
+    ]
+  },
+  "3440 RAMONA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3440 Ramona St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4201368,
+          "longitude": -122.1238199
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10499833453954314939",
+        "displayName": {
+          "text": "3440 Ramona St"
+        }
+      }
+    ]
+  },
+  ".4100 EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "4100 El Camino Real, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.414277899999995,
+          "longitude": -122.1268368
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2359497968606753386",
+        "displayName": {
+          "text": "4100 El Camino Real"
+        }
+      }
+    ]
+  },
+  "330 EDLEE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "330 Edlee Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4116122,
+          "longitude": -122.1190381
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17813421741731040280",
+        "displayName": {
+          "text": "330 Edlee Ave"
+        }
+      }
+    ]
+  },
+  "725 WELCH RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "725 Welch Rd, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4362794,
+          "longitude": -122.1754005
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3139734312749243292",
+        "displayName": {
+          "text": "725 Welch Rd"
+        }
+      }
+    ]
+  },
+  "2468 W BAYSHORE RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2468 W Bayshore Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.445835200000005,
+          "longitude": -122.1209873
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3833665377858148712",
+        "displayName": {
+          "text": "2468 W Bayshore Rd"
+        }
+      }
+    ]
+  },
+  "4207 POMONA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "4207 Pomona Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4047907,
+          "longitude": -122.1269191
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7061224375187598502",
+        "displayName": {
+          "text": "4207 Pomona Ave"
+        }
+      }
+    ]
+  },
+  "3500 DEER CREEK RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "3500 Deer Creek Rd, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.3946872,
+          "longitude": -122.15039179999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10681539549466842605",
+        "displayName": {
+          "text": "3500 Deer Creek Rd"
+        }
+      }
+    ]
+  },
+  ".2000 PRINCETON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "2000 Princeton St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.423276099999995,
+          "longitude": -122.15266640000002
+        },
+        "googleMapsUri": "https://maps.google.com/?q=2000+Princeton+St,+Palo+Alto,+CA+94306,+USA&ftid=0x808fbae81da593c3:0xe19e87316b024044",
+        "displayName": {
+          "text": "2000 Princeton St"
+        }
+      }
+    ]
+  },
+  "912 WEBSTER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "912 Webster St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4457865,
+          "longitude": -122.15286180000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1621208257784908831",
+        "displayName": {
+          "text": "912 Webster St"
+        }
+      }
+    ]
+  },
+  "PALO ALTO AVE/EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "El Camino Real & Palo Alto Ave, Palo Alto, CA 94025, USA",
+        "location": {
+          "latitude": 37.446847399999996,
+          "longitude": -122.17155549999998
+        },
+        "googleMapsUri": "https://maps.google.com/?q=El+Camino+Real+%26+Palo+Alto+Ave,+Palo+Alto,+CA+94025,+USA&ftid=0x808fbb4a7c72bda9:0xba38b43c16645b48",
+        "displayName": {
+          "text": "El Camino Real & Palo Alto Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "ALMA ST/E MEADOW DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "E Meadow Dr & Alma St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4177387,
+          "longitude": -122.1231867
+        },
+        "googleMapsUri": "https://maps.google.com/?q=E+Meadow+Dr+%26+Alma+St,+Palo+Alto,+CA+94306,+USA&ftid=0x808fba640221cb6f:0x2726f775a2a810c4",
+        "displayName": {
+          "text": "East Meadow Drive & Alma Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "267 CURTNER AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "267 Curtner Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4196984,
+          "longitude": -122.1294723
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=840489834215323244",
+        "displayName": {
+          "text": "267 Curtner Ave"
+        }
+      }
+    ]
+  },
+  "1938 CHANNING AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1938 Channing Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.448360699999995,
+          "longitude": -122.12890259999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3294801778788542425",
+        "displayName": {
+          "text": "1938 Channing Ave"
+        }
+      }
+    ]
+  },
+  "4267 LOS PALOS AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "4267 Los Palos Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4051019,
+          "longitude": -122.12399239999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14843005653348966861",
+        "displayName": {
+          "text": "4267 Los Palos Ave"
+        }
+      }
+    ]
+  },
+  "940 OLD TRACE CT, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "940 Old Trace Ct, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.3937066,
+          "longitude": -122.1371672
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1536716173632754008",
+        "displayName": {
+          "text": "940 Old Trace Ct"
+        }
+      }
+    ]
+  },
+  "HAMILTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Hamilton Ave, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.4543279,
+          "longitude": -122.1469329
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9026519809318710028",
+        "displayName": {
+          "text": "Hamilton Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "100 WAVERLEY OAKS, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "100 Waverley Oaks, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.433490899999995,
+          "longitude": -122.14002119999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2807708870634833879",
+        "displayName": {
+          "text": "100 Waverley Oaks"
+        }
+      }
+    ]
+  },
+  ".300 SHERMAN AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "300 Sherman Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.426853699999995,
+          "longitude": -122.1429644
+        },
+        "googleMapsUri": "https://maps.google.com/?q=300+Sherman+Ave,+Palo+Alto,+CA+94306,+USA&ftid=0x808fbae578cd98bd:0x77e7fe745e0d0383",
+        "displayName": {
+          "text": "300 Sherman Ave"
+        }
+      }
+    ]
+  },
+  "101 CALIFORNIA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "101 California Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4285802,
+          "longitude": -122.142713
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2972138083190103366",
+        "displayName": {
+          "text": "101 California Ave"
+        }
+      }
+    ]
+  },
+  "1398 DANA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1398 Dana Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4533096,
+          "longitude": -122.14345390000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3012582292705554380",
+        "displayName": {
+          "text": "1398 Dana Ave"
+        }
+      }
+    ]
+  },
+  "330 VICTORIA PL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "330 Victoria Pl, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4155124,
+          "longitude": -122.1243251
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=889486047482251187",
+        "displayName": {
+          "text": "330 Victoria Pl"
+        }
+      }
+    ]
+  },
+  "10 ROOSEVELT CIR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "10 Roosevelt Cir, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4172485,
+          "longitude": -122.11962720000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2192602337882019096",
+        "displayName": {
+          "text": "10 Roosevelt Cir"
+        }
+      }
+    ]
+  },
+  "670 SAN ANTONIO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "670 San Antonio Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.414488,
+          "longitude": -122.1034341
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4359645663640018685",
+        "displayName": {
+          "text": "670 San Antonio Rd"
+        }
+      }
+    ]
+  },
+  "14 PHILLIPS RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "14 Phillips Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4522633,
+          "longitude": -122.1356601
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7106878875624506477",
+        "displayName": {
+          "text": "14 Phillips Rd"
+        }
+      }
+    ]
+  },
+  "2452 W BAYSHORE RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2452 W Bayshore Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4455972,
+          "longitude": -122.12194629999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13150321603040279438",
+        "displayName": {
+          "text": "2452 W Bayshore Rd"
+        }
+      }
+    ]
+  },
+  "350 SHERMAN AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "350 Sherman Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4266594,
+          "longitude": -122.14343579999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7159047760392030236",
+        "displayName": {
+          "text": "350 Sherman Ave"
+        }
+      }
+    ]
+  },
+  "959 LOMA VERDE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "959 Loma Verde Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.434531799999995,
+          "longitude": -122.1147851
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16564731968566655486",
+        "displayName": {
+          "text": "959 Loma Verde Ave"
+        }
+      }
+    ]
+  },
+  "3800 MIDDLEFIELD RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3800 Middlefield Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4210462,
+          "longitude": -122.1136664
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14764363020477020242",
+        "displayName": {
+          "text": "3800 Middlefield Rd"
+        }
+      }
+    ]
+  },
+  "4075 EL CAMINO WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "4075 El Camino Way, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4154474,
+          "longitude": -122.1263005
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12142144809941670185",
+        "displayName": {
+          "text": "4075 El Camino Way"
+        }
+      }
+    ]
+  },
+  "1900 BRYANT ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1900 Bryant St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4346458,
+          "longitude": -122.14406439999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1816965633407916520",
+        "displayName": {
+          "text": "1900 Bryant St"
+        }
+      }
+    ]
+  },
+  "2511 WEBSTER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2511 Webster St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4334224,
+          "longitude": -122.13222329999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7003598034483131744",
+        "displayName": {
+          "text": "2511 Webster St"
+        }
+      }
+    ]
+  },
+  "110 WEBSTER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "110 Webster St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4525302,
+          "longitude": -122.16318829999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2758887882127138958",
+        "displayName": {
+          "text": "110 Webster St"
+        }
+      }
+    ]
+  },
+  "E CHARLESTON RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "E Charleston Rd, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.420938,
+          "longitude": -122.1076187
+        },
+        "googleMapsUri": "https://maps.google.com/?q=E+Charleston+Rd,+Palo+Alto,+CA,+USA&ftid=0x808fba12b0563d4f:0xc776ca1a9c76c009",
+        "displayName": {
+          "text": "East Charleston Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "100 CALIFORNIA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "100 California Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4289373,
+          "longitude": -122.14325219999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1554603609471760012",
+        "displayName": {
+          "text": "100 California Ave"
+        }
+      }
+    ]
+  },
+  "438 RAMONA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "438 Ramona St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4456737,
+          "longitude": -122.16302060000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8859041718673530844",
+        "displayName": {
+          "text": "438 Ramona St"
+        }
+      }
+    ]
+  },
+  "650 CENTER DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "650 Center Dr, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4537601,
+          "longitude": -122.1434554
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11482678660449455987",
+        "displayName": {
+          "text": "650 Center Dr"
+        }
+      }
+    ]
+  },
+  "800 SAN ANTONIO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "800 San Antonio Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.420277299999995,
+          "longitude": -122.1014503
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9853927989295927247",
+        "displayName": {
+          "text": "800 San Antonio Rd"
+        }
+      }
+    ]
+  },
+  "3398 EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "3398 El Camino Real, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.419367099999995,
+          "longitude": -122.1360957
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8511721647820486534",
+        "displayName": {
+          "text": "3398 El Camino Real"
+        }
+      }
+    ]
+  },
+  "1530 ARASTRADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "1530 Arastradero Rd, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.388369999999995,
+          "longitude": -122.17420200000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1133413590713193401",
+        "displayName": {
+          "text": "1530 Arastradero Rd"
+        }
+      }
+    ]
+  },
+  "901 WEBSTER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "901 Webster St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.446332,
+          "longitude": -122.15263979999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5085586716033190035",
+        "displayName": {
+          "text": "901 Webster St"
+        }
+      }
+    ]
+  },
+  "3111 BANDERA DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3111 Bandera Dr, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.3706278,
+          "longitude": -122.1705072
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5567478153497270511",
+        "displayName": {
+          "text": "3111 Bandera Dr"
+        }
+      }
+    ]
+  },
+  "451 ADDISON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "451 Addison Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.444054699999995,
+          "longitude": -122.1538709
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3842038604496674712",
+        "displayName": {
+          "text": "451 Addison Ave"
+        }
+      }
+    ]
+  },
+  "1921 EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "1921 El Camino Real, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4285827,
+          "longitude": -122.14956780000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5133213347219509035",
+        "displayName": {
+          "text": "1921 El Camino Real"
+        }
+      }
+    ]
+  },
+  "690 SAN ANTONIO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "690 San Antonio Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4150911,
+          "longitude": -122.1028253
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13163906387207585640",
+        "displayName": {
+          "text": "690 San Antonio Rd"
+        }
+      }
+    ]
+  },
+  "CLARK WAY/MOSHER WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Mosher Way & Clark Way, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4370516,
+          "longitude": -122.18086640000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Mosher+Way+%26+Clark+Way,+Palo+Alto,+CA+94304,+USA&ftid=0x808fa4ce9a6dfb47:0x122f40ba54655c6c",
+        "displayName": {
+          "text": "Mosher Way & Clark Way",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "800 HIGH ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "800 High St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4413856,
+          "longitude": -122.15937929999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=993997586354387578",
+        "displayName": {
+          "text": "800 High St"
+        }
+      }
+    ]
+  },
+  "300 PASTEUR DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "Lane Building, 300 Pasteur Dr, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4331552,
+          "longitude": -122.17667859999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=812107605461160909",
+        "displayName": {
+          "text": "Lane Building",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "95 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "95 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4434368,
+          "longitude": -122.1651672
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3689665010728101625",
+        "displayName": {
+          "text": "95 University Ave"
+        }
+      }
+    ]
+  },
+  "3700 MIDDLEFIELD RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3700 Middlefield Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4222275,
+          "longitude": -122.11274549999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=6116507327194040035",
+        "displayName": {
+          "text": "3700 Middlefield Rd"
+        }
+      }
+    ]
+  },
+  "706 SUTTER AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "706 Sutter Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4321546,
+          "longitude": -122.1262731
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7838700769474846424",
+        "displayName": {
+          "text": "706 Sutter Ave"
+        }
+      }
+    ]
+  },
+  "660 STANFORD AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "660 Stanford Ave, Stanford, CA 94305, USA",
+        "location": {
+          "latitude": 37.4257904,
+          "longitude": -122.15087609999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=660+Stanford+Ave,+Stanford,+CA+94305,+USA&ftid=0x808fbae79964dfe7:0x99f40565c8bb9d67",
+        "displayName": {
+          "text": "660 Stanford Ave"
+        }
+      }
+    ]
+  },
+  "ALMA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Alma St, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.4332845,
+          "longitude": -122.1478632
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Alma+St,+Palo+Alto,+CA,+USA&ftid=0x808fbaf07bbdb5bd:0xa6fcf912847c6e99",
+        "displayName": {
+          "text": "Alma Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "628 WAVERLEY ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "628 Waverley St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.445779099999996,
+          "longitude": -122.15877580000002
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13292449444666399100",
+        "displayName": {
+          "text": "628 Waverley St"
+        }
+      }
+    ]
+  },
+  "778 MORENO AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "778 Moreno Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4362007,
+          "longitude": -122.12858109999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12968665440153204105",
+        "displayName": {
+          "text": "778 Moreno Ave"
+        }
+      }
+    ]
+  },
+  "EVERETT AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Everett Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.449303,
+          "longitude": -122.1623397
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5190860080901599826",
+        "displayName": {
+          "text": "Everett Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "850 WEBSTER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "850 Webster St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4463527,
+          "longitude": -122.1541868
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8169906365806318598",
+        "displayName": {
+          "text": "850 Webster St"
+        }
+      }
+    ]
+  },
+  "ALMA ST/HAMILTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Hamilton Ave & Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4426893,
+          "longitude": -122.1627721
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Hamilton+Ave+%26+Alma+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb3a717023e7:0x16b7b32e161110b2",
+        "displayName": {
+          "text": "Hamilton Avenue & Alma Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "762 GAILEN CT, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "762 Gailen Ct, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4226916,
+          "longitude": -122.1077626
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1747165771262315307",
+        "displayName": {
+          "text": "762 Gailen Ct"
+        }
+      }
+    ]
+  },
+  "474 MATADERO AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "474 Matadero Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4194496,
+          "longitude": -122.1335895
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=559670072128925050",
+        "displayName": {
+          "text": "474 Matadero Ave"
+        }
+      }
+    ]
+  },
+  "272 WAVERLEY ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "272 Waverley St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.448814999999996,
+          "longitude": -122.163435
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9821678904252363673",
+        "displayName": {
+          "text": "272 Waverley St"
+        }
+      }
+    ]
+  },
+  "4180 EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "4180 El Camino Real, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4108121,
+          "longitude": -122.1245258
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3203124993806327495",
+        "displayName": {
+          "text": "4180 El Camino Real"
+        }
+      }
+    ]
+  },
+  "1237 ALMA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "1237 Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4378251,
+          "longitude": -122.1544926
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5073173743628301984",
+        "displayName": {
+          "text": "1237 Alma St"
+        }
+      }
+    ]
+  },
+  ".400 BLK EMERSON ST., Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "400 Emerson St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.445248899999996,
+          "longitude": -122.164006
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13469935610564894791",
+        "displayName": {
+          "text": "400 Emerson St"
+        }
+      }
+    ]
+  },
+  "PARK BLVD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Park Blvd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4228685,
+          "longitude": -122.1328274
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11205841697816294989",
+        "displayName": {
+          "text": "Park Boulevard",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "1520 EMERSON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1520 Emerson St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.436452599999996,
+          "longitude": -122.15010399999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=18080470033142750950",
+        "displayName": {
+          "text": "1520 Emerson St"
+        }
+      }
+    ]
+  },
+  ".300 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "300 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.445934099999995,
+          "longitude": -122.16124309999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11943660378385641275",
+        "displayName": {
+          "text": "300 University Ave"
+        }
+      }
+    ]
+  },
+  "471 EMERSON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "471 Emerson St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4450542,
+          "longitude": -122.1629127
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12977823477941061904",
+        "displayName": {
+          "text": "471 Emerson St"
+        }
+      }
+    ]
+  },
+  "2600 EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "2600 El Camino Real, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4239009,
+          "longitude": -122.14445060000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16238502486760643174",
+        "displayName": {
+          "text": "2600 El Camino Real"
+        }
+      }
+    ]
+  },
+  "3085 MIDDLEFIELD RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3085 Middlefield Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.430763299999995,
+          "longitude": -122.12416029999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12043157092238745542",
+        "displayName": {
+          "text": "3085 Middlefield Rd"
+        }
+      }
+    ]
+  },
+  "795 EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "795 El Camino Real, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4403094,
+          "longitude": -122.1616248
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4676582163312546220",
+        "displayName": {
+          "text": "795 El Camino Real"
+        }
+      }
+    ]
+  },
+  "1742 SAND HILL RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "1742 Sand Hill Rd, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4309225,
+          "longitude": -122.18810389999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3878894862839366975",
+        "displayName": {
+          "text": "1742 Sand Hill Rd"
+        }
+      }
+    ]
+  },
+  "2361 WELLESLEY ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "2361 Wellesley St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4230843,
+          "longitude": -122.14799409999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8982552679386175945",
+        "displayName": {
+          "text": "2361 Wellesley St"
+        }
+      }
+    ]
+  },
+  "701 MARION AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "701 Marion Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4352026,
+          "longitude": -122.13168979999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15153411743222298283",
+        "displayName": {
+          "text": "701 Marion Ave"
+        }
+      }
+    ]
+  },
+  "1704 OAK CREEK DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "1704 Oak Creek Dr, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4316983,
+          "longitude": -122.1882885
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5033725491336461742",
+        "displayName": {
+          "text": "1704 Oak Creek Dr"
+        }
+      }
+    ]
+  },
+  "705 CLARK WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "705 Clark Way, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.438735699999995,
+          "longitude": -122.17815309999997
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5866749253530657252",
+        "displayName": {
+          "text": "705 Clark Way"
+        }
+      }
+    ]
+  },
+  "3029 PRICE CT, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3029 Price Ct, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.432637199999995,
+          "longitude": -122.12314919999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14975796161001201729",
+        "displayName": {
+          "text": "3029 Price Ct"
+        }
+      }
+    ]
+  },
+  "2577 PARK BLVD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2577 Park Blvd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4279052,
+          "longitude": -122.14059049999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1978897224811144185",
+        "displayName": {
+          "text": "2577 Park Blvd"
+        }
+      }
+    ]
+  },
+  "460 EMERSON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "460 Emerson St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.444755799999996,
+          "longitude": -122.16319769999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4229964349656369782",
+        "displayName": {
+          "text": "460 Emerson St"
+        }
+      }
+    ]
+  },
+  "HIGH ST/CHANNING AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Channing Ave & High St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.440959299999996,
+          "longitude": -122.15842900000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Channing+Ave+%26+High+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb3b4dbaf329:0xac0872bc9565019d",
+        "displayName": {
+          "text": "Channing Avenue & High Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "245 LYTTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "245 Lytton Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.445979799999996,
+          "longitude": -122.16400560000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5717819952574352829",
+        "displayName": {
+          "text": "245 Lytton Ave"
+        }
+      }
+    ]
+  },
+  "1101 EMBARCADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1101 Embarcadero Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4474288,
+          "longitude": -122.12636409999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10435644570050155248",
+        "displayName": {
+          "text": "1101 Embarcadero Rd"
+        }
+      }
+    ]
+  },
+  "530 COWPER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "530 Cowper St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4476225,
+          "longitude": -122.15883509999998
+        },
+        "googleMapsUri": "https://maps.google.com/?q=530+Cowper+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb38d8b55845:0xf7a198107b1361ce",
+        "displayName": {
+          "text": "530 Cowper St"
+        }
+      }
+    ]
+  },
+  "220 PORTAGE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "220 Portage Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.424131,
+          "longitude": -122.136096
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9312008704556755318",
+        "displayName": {
+          "text": "220 Portage Ave"
+        }
+      }
+    ]
+  },
+  "722 MARION AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "722 Marion Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4353456,
+          "longitude": -122.13086759999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17016512975962504640",
+        "displayName": {
+          "text": "722 Marion Ave"
+        }
+      }
+    ]
+  },
+  "NEWELL RD/EDGEWOOD DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Edgewood Dr & Newell Rd, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.453710699999995,
+          "longitude": -122.13709310000002
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Edgewood+Dr+%26+Newell+Rd,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb0c4f982ad7:0x23e7d523b4182df9",
+        "displayName": {
+          "text": "Edgewood Drive & Newell Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "255 DAVENPORT WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "255 Davenport Way, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.416026099999996,
+          "longitude": -122.1230203
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=18034927019441357130",
+        "displayName": {
+          "text": "255 Davenport Way"
+        }
+      }
+    ]
+  },
+  "3445 ALMA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3445 Alma St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4189358,
+          "longitude": -122.1244371
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=990072780976338421",
+        "displayName": {
+          "text": "3445 Alma St"
+        }
+      }
+    ]
+  },
+  "4103 SCRIPPS AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "4103 Scripps Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4130519,
+          "longitude": -122.1097061
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11043157293047042383",
+        "displayName": {
+          "text": "4103 Scripps Ave"
+        }
+      }
+    ]
+  },
+  "4291 EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "4291 El Camino Real, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4063704,
+          "longitude": -122.1195495
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13337595613659119840",
+        "displayName": {
+          "text": "4291 El Camino Real"
+        }
+      }
+    ]
+  },
+  "WATSON CT, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "Watson Ct, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4483121,
+          "longitude": -122.1196162
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=14721436466824168802",
+        "displayName": {
+          "text": "Watson Court",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "926 RAMONA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "926 Ramona St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4416825,
+          "longitude": -122.15685870000002
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7685895106322937322",
+        "displayName": {
+          "text": "926 Ramona St"
+        }
+      }
+    ]
+  },
+  ".2300 BRYANT ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "2300 Bryant St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4315579,
+          "longitude": -122.1393159
+        },
+        "googleMapsUri": "https://maps.google.com/?q=2300+Bryant+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbafb687cb89f:0x21a9da617c22a6b4",
+        "displayName": {
+          "text": "2300 Bryant St"
+        }
+      }
+    ]
+  },
+  ".2100 WEBSTER ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "2100 Webster St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.437047799999995,
+          "longitude": -122.13822999999998
+        },
+        "googleMapsUri": "https://maps.google.com/?q=2100+Webster+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbafd9e8525ef:0x6fbe6401d07bd261",
+        "displayName": {
+          "text": "2100 Webster St"
+        }
+      }
+    ]
+  },
+  "E CHARLESTON RD/ALMA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "E Charleston Rd & Alma St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.414802099999996,
+          "longitude": -122.11848239999998
+        },
+        "googleMapsUri": "https://maps.google.com/?q=E+Charleston+Rd+%26+Alma+St,+Palo+Alto,+CA+94306,+USA&ftid=0x808fba65518a94fd:0x85f5f8408949eb15",
+        "displayName": {
+          "text": "East Charleston Road & Alma Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  ".3900 ALMA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "3900 Alma St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4135328,
+          "longitude": -122.11643259999998
+        },
+        "googleMapsUri": "https://maps.google.com/?q=3900+Alma+St,+Palo+Alto,+CA+94306,+USA&ftid=0x808fba705bcf649b:0xa6cdbc5f3c460da7",
+        "displayName": {
+          "text": "3900 Alma St"
+        }
+      }
+    ]
+  },
+  "328 MIDDLEFIELD RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "328 Middlefield Rd, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4517781,
+          "longitude": -122.15898770000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12287128104588453728",
+        "displayName": {
+          "text": "328 Middlefield Rd"
+        }
+      }
+    ]
+  },
+  "FOOTHILL EXPR/ARASTRADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "corporate_office",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "4001 Miranda Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.401136,
+          "longitude": -122.1367515
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1530696373888283326",
+        "displayName": {
+          "text": "Foothill Research Center",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "tourist_attraction",
+          "park",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Page Mill Rd, Los Altos, CA 94022, USA",
+        "location": {
+          "latitude": 37.3543498,
+          "longitude": -122.1703974
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15310396985910145153",
+        "displayName": {
+          "text": "Foothills Open Space Preserve",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "tourist_attraction",
+          "park",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "1530 Arastradero Rd, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.3871226,
+          "longitude": -122.17383740000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=17126162181741279158",
+        "displayName": {
+          "text": "Pearson-Arastradero Preserve",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "tourist_attraction",
+          "park",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "11799 Page Mill Rd, Los Altos Hills, CA 94022, USA",
+        "location": {
+          "latitude": 37.3630227,
+          "longitude": -122.17205320000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1132478391984936301",
+        "displayName": {
+          "text": "Foothills Nature Preserve",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_complex",
+          "real_estate_agency",
+          "apartment_building",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "724 Arastradero Rd #321, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4006659,
+          "longitude": -122.1307415
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1312651124051534881",
+        "displayName": {
+          "text": "Arastradero West Apartments",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "bus_station",
+          "transit_station",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.39354000000001,
+          "longitude": -122.14598
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11437361953816835065",
+        "displayName": {
+          "text": "1070 Arastradero Rd",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "visitor_center",
+          "tourist_information_center",
+          "tour_agency",
+          "travel_agency",
+          "local_government_office",
+          "government_office",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Interpretative Center, 3300 Page Mill Rd, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.3634682,
+          "longitude": -122.18637079999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8185448708962818352",
+        "displayName": {
+          "text": "Foothills Park Nature Interpretive Center",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_building",
+          "real_estate_agency",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "565 Arastradero Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4086412,
+          "longitude": -122.12409389999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=298318315200960329",
+        "displayName": {
+          "text": "Palo Alto Place Apartments",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "hiking_area",
+          "park",
+          "sports_activity_location",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Arastradero Creek Trail, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.3750181,
+          "longitude": -122.1817348
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9954981196654561864",
+        "displayName": {
+          "text": "Arastradero Creek Trail",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "apartment_building",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "574 Arastradero Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4089071,
+          "longitude": -122.12557580000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=18149853293306337440",
+        "displayName": {
+          "text": "Arastradero Park Apartments",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "bus_stop",
+          "transit_station",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.3950414,
+          "longitude": -122.1432766
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4319738151463386669",
+        "displayName": {
+          "text": "Hillview Av & Arastradero Rd",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "EMBARCADERO RD/WAVERLEY ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Waverley St & Embarcadero Rd, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4403138,
+          "longitude": -122.1496145
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Waverley+St+%26+Embarcadero+Rd,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb18e502738d:0x75b47cf491060644",
+        "displayName": {
+          "text": "Waverley Street & Embarcadero Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "1303 WAVERLEY ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1303 Waverley St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4409407,
+          "longitude": -122.15009350000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=6210594093426423022",
+        "displayName": {
+          "text": "1303 Waverley St"
+        }
+      }
+    ]
+  },
+  "129 EMERSON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "129 Emerson St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4477225,
+          "longitude": -122.16719649999997
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9566630692307204396",
+        "displayName": {
+          "text": "129 Emerson St"
+        }
+      }
+    ]
+  },
+  "11 MORTON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "11 Morton Way, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.445121199999996,
+          "longitude": -122.13173809999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2609404526639567311",
+        "displayName": {
+          "text": "11 Morton Way"
+        }
+      }
+    ]
+  },
+  "3785 MIDDLEFIELD RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3785 Middlefield Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4231856,
+          "longitude": -122.11258830000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5215496821241220883",
+        "displayName": {
+          "text": "3785 Middlefield Rd"
+        }
+      }
+    ]
+  },
+  "43 TULIP LN, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "43 Tulip Ln, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4474428,
+          "longitude": -122.1282126
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8331184327000938882",
+        "displayName": {
+          "text": "43 Tulip Ln"
+        }
+      }
+    ]
+  },
+  "561 HIGH ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "561 High St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4438453,
+          "longitude": -122.16253959999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9347524675249978037",
+        "displayName": {
+          "text": "561 High St"
+        }
+      }
+    ]
+  },
+  "310 VENTURA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "310 Ventura Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.418960399999996,
+          "longitude": -122.12907489999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=16109114621345814323",
+        "displayName": {
+          "text": "310 Ventura Ave"
+        }
+      }
+    ]
+  },
+  "2170 W BAYSHORE RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2170 W Bayshore Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4483113,
+          "longitude": -122.12544899999997
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=300227103122615881",
+        "displayName": {
+          "text": "2170 W Bayshore Rd"
+        }
+      }
+    ]
+  },
+  "630 DONOHOE ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "630 Donohoe St, East Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.462395799999996,
+          "longitude": -122.14128459999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=6589792727185197497",
+        "displayName": {
+          "text": "630 Donohoe St"
+        }
+      }
+    ]
+  },
+  "EMBARCADERO RD/E BAYSHORE RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "E Bayshore Rd & Embarcadero Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4496507,
+          "longitude": -122.11967109999998
+        },
+        "googleMapsUri": "https://maps.google.com/?q=E+Bayshore+Rd+%26+Embarcadero+Rd,+Palo+Alto,+CA+94303,+USA&ftid=0x808fbbae4ee9b84f:0x34d3fa6f1f0b0920",
+        "displayName": {
+          "text": "East Bayshore Road & Embarcadero Road",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "3801 MIRANDA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "Bldg T6, 3801 Miranda Ave, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4033348,
+          "longitude": -122.13721849999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2356658483802008728",
+        "displayName": {
+          "text": "Bldg T6",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "COWPER ST/HAMILTON AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Cowper St & Hamilton Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4475306,
+          "longitude": -122.15797420000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Cowper+St+%26+Hamilton+Ave,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb392e0e2035:0xdd7ae11b0603796",
+        "displayName": {
+          "text": "Cowper Street & Hamilton Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "400 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "400 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4472036,
+          "longitude": -122.16003189999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8093713334360921479",
+        "displayName": {
+          "text": "400 University Ave"
+        }
+      }
+    ]
+  },
+  "913 EL CAJON WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "913 El Cajon Way, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4424705,
+          "longitude": -122.12894849999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12535047792178163180",
+        "displayName": {
+          "text": "913 El Cajon Way"
+        }
+      }
+    ]
+  },
+  "535 ARASTRADERO RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "535 Arastradero Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4090055,
+          "longitude": -122.12344139999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10795717329918837823",
+        "displayName": {
+          "text": "535 Arastradero Rd"
+        }
+      }
+    ]
+  },
+  "668 RAMONA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "668 Ramona St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4436247,
+          "longitude": -122.1600632
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7330913330337466517",
+        "displayName": {
+          "text": "668 Ramona St"
+        }
+      }
+    ]
+  },
+  "783 TALISMAN CT, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "783 Talisman Ct, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4271046,
+          "longitude": -122.11460930000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7458814836826745123",
+        "displayName": {
+          "text": "783 Talisman Ct"
+        }
+      }
+    ]
+  },
+  "2675 MIDDLEFIELD RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "2675 Middlefield Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.434028399999995,
+          "longitude": -122.12954739999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3757611220665581614",
+        "displayName": {
+          "text": "2675 Middlefield Rd"
+        }
+      }
+    ]
+  },
+  ".4100 EL CAMINO WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "4100 El Camino Way, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.414134499999996,
+          "longitude": -122.12543319999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=1420009526783358474",
+        "displayName": {
+          "text": "4100 El Camino Way"
+        }
+      }
+    ]
+  },
+  "127 GREENMEADOW WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "127 Greenmeadow Way, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4132478,
+          "longitude": -122.11529939999998
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=639609900080385676",
+        "displayName": {
+          "text": "127 Greenmeadow Way"
+        }
+      }
+    ]
+  },
+  "FOREST AVE/ALMA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Forest Ave & Alma St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4419064,
+          "longitude": -122.1615254
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Forest+Ave+%26+Alma+St,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb3af40808c1:0xd1d3e7a81b5d8d62",
+        "displayName": {
+          "text": "Forest Avenue & Alma Street",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  ".200 PALO ALTO AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "200 Palo Alto Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4479547,
+          "longitude": -122.16763379999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=11864884518236033858",
+        "displayName": {
+          "text": "200 Palo Alto Ave"
+        }
+      }
+    ]
+  },
+  "339 UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "subpremise",
+          "street_address"
+        ],
+        "formattedAddress": "339 University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4465508,
+          "longitude": -122.1613223
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3559868893578607675",
+        "displayName": {
+          "text": "339 University Ave"
+        }
+      }
+    ]
+  },
+  "491 JAMES RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "491 James Rd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.413186599999996,
+          "longitude": -122.1239269
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3906473867987171304",
+        "displayName": {
+          "text": "491 James Rd"
+        }
+      }
+    ]
+  },
+  "LINCOLN AVE/UNIVERSITY AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "Lincoln Ave & University Ave, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4555182,
+          "longitude": -122.14693390000001
+        },
+        "googleMapsUri": "https://maps.google.com/?q=Lincoln+Ave+%26+University+Ave,+Palo+Alto,+CA+94301,+USA&ftid=0x808fbb6b657c6b95:0x83fe0b2f4b118b31",
+        "displayName": {
+          "text": "Lincoln Avenue & University Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "892 LOMA VERDE AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "892 Loma Verde Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.432894499999996,
+          "longitude": -122.11644700000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5643790808479608886",
+        "displayName": {
+          "text": "892 Loma Verde Ave"
+        }
+      }
+    ]
+  },
+  "1100 PAGE MILL RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "1100 Page Mill Rd, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4191687,
+          "longitude": -122.14758950000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5272520703963117068",
+        "displayName": {
+          "text": "1100 Page Mill Rd"
+        }
+      }
+    ]
+  },
+  "3663 ARBUTUS AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3663 Arbutus Ave, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4268315,
+          "longitude": -122.1108198
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=9988811010085596722",
+        "displayName": {
+          "text": "3663 Arbutus Ave"
+        }
+      }
+    ]
+  },
+  "751 WAVERLEY ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "751 Waverley St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4450723,
+          "longitude": -122.1566648
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=945877788237039784",
+        "displayName": {
+          "text": "751 Waverley St"
+        }
+      }
+    ]
+  },
+  "2310 PRINCETON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2310 Princeton St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4216386,
+          "longitude": -122.15000799999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4037702921806111748",
+        "displayName": {
+          "text": "2310 Princeton St"
+        }
+      }
+    ]
+  },
+  "UNIVERSITY AVE/UNIVERSITY CIR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "route"
+        ],
+        "formattedAddress": "University Ave, Palo Alto, CA, USA",
+        "location": {
+          "latitude": 37.455785,
+          "longitude": -122.1514099
+        },
+        "googleMapsUri": "https://maps.google.com/?q=University+Ave,+Palo+Alto,+CA,+USA&ftid=0x808fbb5d829dcead:0x75cf5556243ef768",
+        "displayName": {
+          "text": "University Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "2380 HIGH ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "2380 High St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.429544400000005,
+          "longitude": -122.14133639999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=12717503040063460410",
+        "displayName": {
+          "text": "2380 High St"
+        }
+      }
+    ]
+  },
+  "2316 SANTA CATALINA ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2316 Santa Catalina St, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.4451744,
+          "longitude": -122.12615079999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=4396759354158991134",
+        "displayName": {
+          "text": "2316 Santa Catalina St"
+        }
+      }
+    ]
+  },
+  "3860 PARK BLVD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3860 Park Blvd, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.419652,
+          "longitude": -122.12849410000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5771625639792040805",
+        "displayName": {
+          "text": "3860 Park Blvd"
+        }
+      }
+    ]
+  },
+  "1199 WELCH RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "1199 Welch Rd, Palo Alto, CA 94304, USA",
+        "location": {
+          "latitude": 37.4345381,
+          "longitude": -122.179034
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=2851664767290182217",
+        "displayName": {
+          "text": "1199 Welch Rd"
+        }
+      }
+    ]
+  },
+  "1100 EMERSON ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "street_address"
+        ],
+        "formattedAddress": "1100 Emerson St, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.4397593,
+          "longitude": -122.1553842
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13191148303523747695",
+        "displayName": {
+          "text": "1100 Emerson St"
+        }
+      }
+    ]
+  },
+  "DEAD END/EMBARCADERO WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "clothing_store",
+          "store",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "3370 19th St, San Francisco, CA 94110, USA",
+        "location": {
+          "latitude": 37.7604253,
+          "longitude": -122.4186659
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=10265922593583807811",
+        "displayName": {
+          "text": "Dead End Vintage",
+          "languageCode": "en"
+        }
+      },
+      {
+        "types": [
+          "park",
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "formattedAddress": "2375 Embarcadero Rd, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.448055599999996,
+          "longitude": -122.10625359999999
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=5812208226583328502",
+        "displayName": {
+          "text": "Byxbee Park",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "816 LA PARA AVE, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "816 La Para Ave, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4112959,
+          "longitude": -122.1335538
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8933008754836749924",
+        "displayName": {
+          "text": "816 La Para Ave"
+        }
+      }
+    ]
+  },
+  "4171 HUBBARTT DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "4171 Hubbartt Dr, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.402715799999996,
+          "longitude": -122.13006860000002
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=13513762074193235800",
+        "displayName": {
+          "text": "4171 Hubbartt Dr"
+        }
+      }
+    ]
+  },
+  "2555 CHARLESTON RD, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "2555 Charleston Rd, Mountain View, CA 94043, USA",
+        "location": {
+          "latitude": 37.4210558,
+          "longitude": -122.0999875
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=7849379358671564373",
+        "displayName": {
+          "text": "2555 Charleston Rd"
+        }
+      }
+    ]
+  },
+  "STANFORD AVE/EL CAMINO REAL, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "intersection"
+        ],
+        "formattedAddress": "El Camino Real & Stanford Ave, Stanford, CA 94306, USA",
+        "location": {
+          "latitude": 37.4277076,
+          "longitude": -122.14929149999999
+        },
+        "googleMapsUri": "https://maps.google.com/?q=El+Camino+Real+%26+Stanford+Ave,+Stanford,+CA+94306,+USA&ftid=0x808fbae71e59b3a5:0x389a339711e4ddc",
+        "displayName": {
+          "text": "El Camino Real & Stanford Avenue",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "3254 BRYANT ST, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "3254 Bryant St, Palo Alto, CA 94306, USA",
+        "location": {
+          "latitude": 37.4231201,
+          "longitude": -122.12681070000001
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=3749823849214383754",
+        "displayName": {
+          "text": "3254 Bryant St"
+        }
+      }
+    ]
+  },
+  "164 PRIMROSE WAY, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "164 Primrose Way, Palo Alto, CA 94303, USA",
+        "location": {
+          "latitude": 37.447133799999996,
+          "longitude": -122.1319365
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=8643263439085392495",
+        "displayName": {
+          "text": "164 Primrose Way"
+        }
+      }
+    ]
+  },
+  "851 CENTER DR, Palo Alto, CA": {
+    "places": [
+      {
+        "types": [
+          "premise",
+          "street_address"
+        ],
+        "formattedAddress": "851 Center Dr, Palo Alto, CA 94301, USA",
+        "location": {
+          "latitude": 37.449092,
+          "longitude": -122.1416503
+        },
+        "googleMapsUri": "https://maps.google.com/?cid=15283285419633205563",
+        "displayName": {
+          "text": "851 Center Dr"
+        }
+      }
+    ]
+  }
+}
