@@ -51,6 +51,26 @@ Our most recent analysis has identified:
    - Comprehensive safety report with neighborhood recommendations
    - Location safety comparison between safer and higher-concern areas
    - Incident type distribution by location
+   - **(New)** Interactive map visualization via the `website/` Next.js application.
+
+### Data Preparation Scripts
+
+To support the analysis and visualization, several scripts process the raw data:
+
+1.  **Geocoding (`scripts/process_all_csvs.py`)**:
+    - Reads all CSV files from `data/csv_files/`.
+    - For each unique location string, queries the Google Places API (using `src/geocoding_utils.py`) to get latitude, longitude, formatted address, place types, etc.
+    - Appends geocoding information as new columns.
+    - Implements caching (`data/geocoding_cache.json`) to minimize API calls.
+    - Saves the augmented dataframes to `data/processed_csv_files/` with `_geocoded.csv` suffix.
+    - Notes any CSV parsing errors encountered in `README.md`.
+
+2.  **Website Data Consolidation (`scripts/prepare_website_data.py`)**:
+    - Reads all `*_geocoded.csv` files from `data/processed_csv_files/`.
+    - Combines them into a single dataset.
+    - Selects relevant columns needed for the frontend map.
+    - Filters out records missing valid latitude/longitude.
+    - Saves the consolidated data as a single JSON file (`website/public/data/incidents.json`) to be easily consumed by the frontend application.
 
 ## Setup
 
