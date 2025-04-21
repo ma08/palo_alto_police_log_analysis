@@ -3,6 +3,8 @@ import glob
 import pandas as pd
 import json
 import logging
+import re
+from datetime import datetime
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -30,6 +32,32 @@ RELEVANT_COLUMNS = [
     'location_interpretation'
 ]
 
+def extract_date_from_filename(filename):
+    """
+    Extract date from filenames like 'april-07-2025-police-report-log_geocoded.csv'
+    Returns a tuple of (original_date_string, parsed_datetime_object)
+    """
+    # Extract date part using regex
+    match = re.search(r'([a-z]+-\d+-\d+)', os.path.basename(filename).lower())
+    if not match:
+        return None, None
+    
+    date_str = match.group(1)  # e.g., "april-07-2025"
+    
+    try:
+        # Parse the date
+        date_parts = date_str.split('-')
+        if len(date_parts) != 3:
+            return date_str, None
+            
+        month_name, day, year = date_parts
+        # Convert month name to number
+        datetime_obj = datetime.strptime(f"{month_name} {day} {year}", "%B %d %Y")
+        return date_str, datetime_obj
+    except ValueError:
+        # If parsing fails, return original string but no datetime object
+        return date_str, None
+
 def prepare_data_for_website():
     """Loads processed CSVs, combines them, filters, and saves as JSON for the website."""
     logging.info(f"Looking for processed CSV files in: {PROCESSED_CSV_DIR}")
@@ -45,8 +73,18 @@ def prepare_data_for_website():
     for f in csv_files:
         try:
             df = pd.read_csv(f)
-            # Add a column to track the source file if needed (optional)
-            # df['source_file'] = os.path.basename(f)
+            # Extract police report date from filename
+            report_date_str, report_datetime = extract_date_from_filename(f)
+            
+            # Add as new columns to the dataframe
+            df['police_record_date_str'] = report_date_str  # Original string like "april-07-2025"
+            
+            # Add formatted date if datetime parsing was successful
+            if report_datetime:
+                df['police_record_date'] = report_datetime.strftime("%B %d, %Y")  # Formatted like "April 07, 2025"
+            else:
+                df['police_record_date'] = None
+                
             all_data_frames.append(df)
         except pd.errors.EmptyDataError:
             logging.warning(f"Skipping empty file: {f}")
@@ -64,6 +102,12 @@ def prepare_data_for_website():
     # Select relevant columns
     # Ensure all expected columns exist, handle missing ones gracefully
     columns_to_keep = [col for col in RELEVANT_COLUMNS if col in combined_df.columns]
+    # Add the new police record date columns
+    if 'police_record_date_str' in combined_df.columns:
+        columns_to_keep.append('police_record_date_str')
+    if 'police_record_date' in combined_df.columns:
+        columns_to_keep.append('police_record_date')
+        
     missing_cols = set(RELEVANT_COLUMNS) - set(columns_to_keep)
     if missing_cols:
         logging.warning(f"Missing expected columns in combined data: {missing_cols}. These will not be in the output.")
