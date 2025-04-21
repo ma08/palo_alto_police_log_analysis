@@ -1,0 +1,27 @@
+Burglary - Burglary/breaking and entering (F): 24
+Burglary - From motor vehicle (F): 23
+Vehicle Accident/Non Injury: 20
+Suspicious Circumstances: 16
+Mental Health Evaluation: 16
+Bench warrant/failure to appear on misdemeanor charge (M): 15
+Hit and run with vehicle/property damage only (M): 14
+FOUND PROPERTY: 13
+Vehicle Accident/Injury: 13
+Petty theft - All other larceny (M): 12
+Vandalism:deface property (F): 11
+Grand theft:money/labor/property - All other larceny (F): 11
+Lost Property: 10
+Shoplifting (M): 9
+Outside Warrant Arrest - Misdemeanor: 9
+Vandalism:deface property (M): 8
+Grand theft:money/labor/property - Shoplifting (F): 7
+Grand theft:money/labor/property - Motor vehicle parts/accessories (F): 7
+Grand theft:money/labor/property - From building (F): 6
+Petty theft - From motor vehicle (M): 5
+Dui alcohol (M): 5
+Battery:spouse/ex spouse/date/etc - Simple (M): 5
+Medical Assist: 5
+Vandalism:damage property (M): 5
+Petty theft - From building (M): 5
+Take vehicle w/o owners consent/vehicle theft - Motor vehicle theft (F): 5
+Outside Assist: 5
