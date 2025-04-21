@@ -5,56 +5,178 @@ import logging
 from dotenv import load_dotenv
 from tqdm import tqdm # Import tqdm for progress bar
 import time
+import json # Added for cache handling
+from anthropic import AnthropicBedrock # Added for LLM calls
 
 # Ensure the src directory is discoverable (if running scripts/process_all_csvs.py directly)
 # This might not be needed depending on your project structure and how you run the script
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from src.geocoding_utils import search_place, interpret_place_types
+# Assume geocoding_utils is correctly placed or path adjusted
+try:
+    from src.geocoding_utils import search_place, interpret_place_types
+except ImportError:
+    logging.error("Could not import geocoding_utils. Ensure src/ is in the Python path.")
+    sys.exit(1)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Load environment variables from .env file in the project root
 load_dotenv()
-API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+API_KEY = os.getenv("GOOGLE_MAPS_API_KEY") # For Geocoding
+# AWS credentials for Bedrock are expected to be in environment or ~/.aws/credentials
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+AWS_REGION = os.getenv("AWS_REGION", "us-east-1") # Or your Bedrock region
+# CLAUDE_MODEL_ID = os.getenv("CLAUDE_MODEL_ID", "us.anthropic.claude-3-7-sonnet-20250219-v1:0") # Specify desired model
+CLAUDE_MODEL_ID = "us.anthropic.claude-3-5-sonnet-20241022-v2:0"
 
 # Define directories
 INPUT_DIR = "data/csv_files"
 OUTPUT_DIR = "data/processed_csv_files"
-CACHE_FILE = "data/geocoding_cache.json" # Simple file-based cache
+GEOCODING_CACHE_FILE = "data/geocoding_cache.json" # Cache for geocoding results
+OFFENSE_CATEGORY_CACHE_FILE = "data/offense_category_cache.json" # Cache for LLM categorization
 
-# --- Cache Functions ---
-def load_cache(cache_path):
-    """Loads the geocoding cache from a JSON file."""
+# --- Finalized Offense Categories ---
+OFFENSE_CATEGORIES = [
+    "Theft",
+    "Burglary",
+    "Vehicle Crime",
+    "Traffic Incidents",
+    "Property Crime",
+    "Violent/Person Crime",
+    "Fraud/Financial Crime",
+    "Public Order/Disturbance",
+    "Warrant/Arrest",
+    "Administrative/Other",
+]
+
+# --- Generic Cache Functions (Refactored) ---
+def load_json_cache(cache_path, cache_name="Cache"):
+    """Loads a cache from a JSON file."""
     if os.path.exists(cache_path):
         try:
             with open(cache_path, 'r') as f:
-                logging.info(f"Loading cache from {cache_path}")
+                logging.info(f"Loading {cache_name} from {cache_path}")
                 return json.load(f)
         except (json.JSONDecodeError, IOError) as e:
-            logging.warning(f"Could not load cache file {cache_path}: {e}. Starting with empty cache.")
+            logging.warning(f"Could not load {cache_name} file {cache_path}: {e}. Starting with empty {cache_name}.")
             return {}
     else:
-        logging.info("No cache file found. Starting with empty cache.")
+        logging.info(f"No {cache_name} file found at {cache_path}. Starting with empty {cache_name}.")
         return {}
 
-def save_cache(cache_data, cache_path):
-    """Saves the geocoding cache to a JSON file."""
+def save_json_cache(cache_data, cache_path, cache_name="Cache"):
+    """Saves a cache to a JSON file."""
     try:
         os.makedirs(os.path.dirname(cache_path), exist_ok=True)
         with open(cache_path, 'w') as f:
             json.dump(cache_data, f, indent=2)
-        logging.info(f"Saved cache to {cache_path}")
+        logging.info(f"Saved {cache_name} to {cache_path}")
     except IOError as e:
-        logging.error(f"Could not save cache file {cache_path}: {e}")
+        logging.error(f"Could not save {cache_name} file {cache_path}: {e}")
 
-# --- Main Processing Function ---
-def process_csv(csv_path, output_dir, api_key, geocoding_cache):
-    """Processes a single CSV file to add geocoding data."""
+
+# --- LLM Categorization Function ---
+def get_offense_categories_from_llm(offense_types_to_categorize, llm_client, categories, model_id):
+    """
+    Uses Bedrock Claude to categorize a list of offense types.
+
+    Args:
+        offense_types_to_categorize: List of unique offense type strings needing categorization.
+        llm_client: Initialized AnthropicBedrock client.
+        categories: The predefined list of target categories.
+        model_id: The specific Claude model ID to use.
+
+    Returns:
+        A dictionary mapping input offense_type strings to their predicted category.
+        Returns empty dict if input list is empty or an error occurs.
+    """
+    if not offense_types_to_categorize:
+        return {}
+
+    # Format the list for the prompt
+    offense_list_str = "\\n".join([f"- {ot}" for ot in offense_types_to_categorize])
+    category_list_str = "\\n".join([f"- {cat}" for cat in categories])
+
+    prompt = f"""
+You are an expert police report analyst. Your task is to categorize the following raw offense types into one of the predefined categories.
+
+Predefined Categories:
+{category_list_str}
+
+Offense Types to Categorize:
+{offense_list_str}
+
+Please provide the categorization as a JSON object where keys are the raw offense types and values are the corresponding predefined category. Only output the JSON object, with no additional text, commentary, or explanation before or after the JSON. Ensure every offense type provided is included as a key in the JSON response.
+
+Example Response Format:
+{{
+  "Raw Offense Type 1": "Chosen Category 1",
+  "Raw Offense Type 2": "Chosen Category 2",
+  ...
+}}
+"""
+
+    messages = [{"role": "user", "content": prompt}]
+    max_tokens = 2048 # Adjust if needed based on list size
+    temperature = 0.0 # For deterministic categorization
+
+    logging.info(f"Calling LLM to categorize {len(offense_types_to_categorize)} new offense types...")
+    try:
+        response = llm_client.messages.create(
+            model=model_id,
+            max_tokens=max_tokens,
+            messages=messages,
+            temperature=temperature
+        )
+
+        if response.content and len(response.content) > 0:
+            response_text = response.content[0].text.strip()
+            # Find JSON block, handling potential markdown ```json ... ```
+            json_match = re.search(r'\{.*\}', response_text, re.DOTALL)
+            if json_match:
+                json_str = json_match.group(0)
+                category_map = json.loads(json_str)
+                logging.info(f"LLM successfully categorized {len(category_map)} types.")
+
+                # Validate response - check if all input types are keys in the map
+                missing_keys = set(offense_types_to_categorize) - set(category_map.keys())
+                if missing_keys:
+                    logging.warning(f"LLM response missing keys for: {missing_keys}. Assigning 'Administrative/Other'.")
+                    for key in missing_keys:
+                        category_map[key] = "Administrative/Other" # Assign default
+
+                # Validate response - check if assigned categories are valid
+                invalid_assignments = {}
+                for key, value in category_map.items():
+                    if value not in categories:
+                        invalid_assignments[key] = value
+                if invalid_assignments:
+                    logging.warning(f"LLM assigned invalid categories: {invalid_assignments}. Assigning 'Administrative/Other'.")
+                    for key in invalid_assignments:
+                         category_map[key] = "Administrative/Other" # Assign default
+
+                return category_map
+            else:
+                 logging.exception(f"Could not extract valid JSON from LLM response: {response_text}")
+                 return {} # Failed to parse
+        else:
+            logging.error("LLM returned empty content.")
+            return {}
+    except Exception as e:
+        logging.exception(f"Error calling Bedrock API for categorization: {e}")
+        # Fallback: Assign 'Administrative/Other' to all requested types on error
+        return {ot: "Administrative/Other" for ot in offense_types_to_categorize}
+
+
+# --- Main Processing Function (Updated) ---
+def process_csv(csv_path, output_dir, api_key, geocoding_cache, llm_client, offense_category_cache):
+    """Processes a single CSV file to add geocoding and offense category data."""
     filename = os.path.basename(csv_path)
-    output_path = os.path.join(output_dir, filename.replace(".csv", "_geocoded.csv"))
+    output_path = os.path.join(output_dir, filename.replace(".csv", "_processed.csv")) # Changed suffix
 
     logging.info(f"Processing {filename}...")
 
@@ -70,113 +192,146 @@ def process_csv(csv_path, output_dir, api_key, geocoding_cache):
         logging.error(f"Error reading {csv_path}: {e}")
         return False # Indicate failure
 
-    if 'location' not in df.columns:
-        logging.warning(f"'location' column not found in {filename}. Skipping.")
-        return True # Indicate success (nothing to process)
+    required_columns = ['location', 'offense_type'] # Now require both
+    missing_req_cols = [col for col in required_columns if col not in df.columns]
+    if missing_req_cols:
+        logging.warning(f"Missing required columns ({', '.join(missing_req_cols)}) in {filename}. Skipping.")
+        return True # Skip file if essential columns missing
 
-    # Drop rows where location is null/empty, as they cannot be geocoded
+    # --- Offense Categorization ---
+    df['offense_type'] = df['offense_type'].astype(str).str.strip() # Clean whitespace
+    unique_offenses_in_file = df['offense_type'].dropna().unique()
+    offenses_to_categorize = [
+        offense for offense in unique_offenses_in_file
+        if offense and offense not in offense_category_cache # Check cache
+    ]
+
+    if offenses_to_categorize:
+        logging.info(f"Found {len(offenses_to_categorize)} unique offense types in {filename} needing categorization.")
+        # Call LLM
+        new_categories = get_offense_categories_from_llm(
+            offenses_to_categorize, llm_client, OFFENSE_CATEGORIES, CLAUDE_MODEL_ID
+        )
+        # Update cache immediately
+        offense_category_cache.update(new_categories)
+        logging.info(f"Updated offense category cache with {len(new_categories)} new entries.")
+    else:
+         logging.debug(f"All offense types in {filename} already in cache.")
+
+    # Add category column using the (potentially updated) cache
+    df['offense_category'] = df['offense_type'].map(offense_category_cache).fillna("Administrative/Other")
+
+    # --- Geocoding (remains largely the same, ensure columns added correctly) ---
+    # Drop rows where location is null/empty before geocoding
     original_count = len(df)
     df.dropna(subset=['location'], inplace=True)
     if len(df) < original_count:
         logging.info(f"Dropped {original_count - len(df)} rows with missing locations from {filename}.")
 
+    # Add placeholder columns before potential early exit if df becomes empty
+    geo_cols = ['latitude', 'longitude', 'formatted_address', 'google_maps_uri', 'place_types', 'location_interpretation']
+    for col in geo_cols:
+        if col not in df.columns:
+             df[col] = pd.NA # Use pandas NA for consistency
+
     if df.empty:
-        logging.info(f"No valid locations to process in {filename} after dropping missing values. Skipping API calls.")
-        # Still save an empty/header-only file if needed, or just skip saving?
-        # Let's save it with potentially new columns but no data.
-        df['latitude'] = None
-        df['longitude'] = None
-        df['formatted_address'] = None
-        df['google_maps_uri'] = None
-        df['place_types'] = None
-        df['location_interpretation'] = None
+        logging.info(f"No valid locations to process in {filename} after dropping missing values. Skipping geocoding API calls.")
+        # Save file with category column and empty geo columns
         try:
+            os.makedirs(output_dir, exist_ok=True) # Ensure dir exists
             df.to_csv(output_path, index=False)
-            logging.info(f"Saved empty geocoded file (due to no valid locations) to {output_path}")
+            logging.info(f"Saved processed file (no geocoding needed) to {output_path}")
         except Exception as e:
-            logging.error(f"Error saving empty geocoded file {output_path}: {e}")
+            logging.error(f"Error saving processed file {output_path}: {e}")
             return False
         return True
 
-
+    # Proceed with geocoding for non-empty df
     unique_locations = df['location'].unique()
     logging.info(f"Found {len(unique_locations)} unique locations to geocode in {filename}.")
 
-    results = {}
+    geo_results = {}
     api_calls_made = 0
     for loc in tqdm(unique_locations, desc=f"Geocoding {filename}", unit="location"):
         if pd.isna(loc) or not isinstance(loc, str) or not loc.strip():
-            results[loc] = {'latitude': pd.NA, 'longitude': pd.NA, 'formatted_address': pd.NA,
-                            'google_maps_uri': pd.NA, 'place_types': pd.NA, 'location_interpretation': 'invalid_input'}
+            geo_results[loc] = {col: pd.NA for col in geo_cols}
+            geo_results[loc]['location_interpretation'] = 'invalid_input'
             continue
 
-        # Add context for better results
         full_query = f"{loc}, Palo Alto, CA"
-
-        # Check cache first
         if full_query in geocoding_cache:
             api_result = geocoding_cache[full_query]
-            logging.debug(f"Cache hit for: '{full_query}'")
+            # logging.debug(f"Cache hit for: '{full_query}'") # Can be verbose
         else:
-            # Make API call
-            logging.debug(f"Cache miss. Calling API for: '{full_query}'")
+            # logging.debug(f"Cache miss. Calling API for: '{full_query}'") # Can be verbose
             api_result = search_place(full_query, api_key)
             api_calls_made += 1
-            # Store result (even if None) in cache to avoid re-querying failures
             geocoding_cache[full_query] = api_result
-            # Optional: Add a small delay to respect potential rate limits
-            time.sleep(0.05) # 50ms delay - adjust as needed
+            time.sleep(0.05) # Rate limiting
 
-        # Process the result
         if api_result and api_result.get('places'):
             first_place = api_result['places'][0]
-            lat = first_place.get('location', {}).get('latitude')
-            lon = first_place.get('location', {}).get('longitude')
-            addr = first_place.get('formattedAddress')
-            uri = first_place.get('googleMapsUri')
             types = first_place.get('types', [])
-            interp = interpret_place_types(types)
-            results[loc] = {'latitude': lat, 'longitude': lon, 'formatted_address': addr,
-                            'google_maps_uri': uri, 'place_types': ",".join(types), # Store as comma-separated string
-                            'location_interpretation': interp}
+            geo_results[loc] = {
+                'latitude': first_place.get('location', {}).get('latitude'),
+                'longitude': first_place.get('location', {}).get('longitude'),
+                'formatted_address': first_place.get('formattedAddress'),
+                'google_maps_uri': first_place.get('googleMapsUri'),
+                'place_types': ",".join(types),
+                'location_interpretation': interpret_place_types(types)
+            }
         else:
-            # Handle cases where API returned no places or an error (api_result is None)
-            logging.warning(f"No place found or API error for query: '{full_query}' (Original: '{loc}')")
-            results[loc] = {'latitude': pd.NA, 'longitude': pd.NA, 'formatted_address': pd.NA,
-                            'google_maps_uri': pd.NA, 'place_types': pd.NA, 'location_interpretation': 'not_found'}
+            # logging.warning(f"No place found or API error for query: '{full_query}' (Original: '{loc}')") # Can be verbose
+            geo_results[loc] = {col: pd.NA for col in geo_cols}
+            geo_results[loc]['location_interpretation'] = 'not_found'
 
-    logging.info(f"Made {api_calls_made} API calls for {filename}.")
+    if api_calls_made > 0:
+        logging.info(f"Made {api_calls_made} geocoding API calls for {filename}.")
 
-    # Map results back to the DataFrame
-    df['latitude'] = df['location'].map(lambda x: results.get(x, {}).get('latitude'))
-    df['longitude'] = df['location'].map(lambda x: results.get(x, {}).get('longitude'))
-    df['formatted_address'] = df['location'].map(lambda x: results.get(x, {}).get('formatted_address'))
-    df['google_maps_uri'] = df['location'].map(lambda x: results.get(x, {}).get('google_maps_uri'))
-    df['place_types'] = df['location'].map(lambda x: results.get(x, {}).get('place_types'))
-    df['location_interpretation'] = df['location'].map(lambda x: results.get(x, {}).get('location_interpretation'))
+    # Map geocoding results back efficiently
+    for col in geo_cols:
+         df[col] = df['location'].map(lambda x: geo_results.get(x, {}).get(col))
 
-    # Save the processed DataFrame
+    # --- Save the final processed DataFrame ---
     try:
         os.makedirs(output_dir, exist_ok=True)
         df.to_csv(output_path, index=False)
-        logging.info(f"Successfully processed and saved geocoded data to {output_path}")
+        logging.info(f"Successfully processed and saved data to {output_path}")
         return True # Indicate success
     except Exception as e:
         logging.error(f"Error saving processed file {output_path}: {e}")
         return False # Indicate failure
 
-# --- Main Execution Block ---
+# --- Main Execution Block (Updated) ---
 if __name__ == "__main__":
+    import re # Import re for LLM response parsing
+
+    # Check API key for Geocoding
     if not API_KEY:
         logging.error("FATAL: GOOGLE_MAPS_API_KEY not found in environment variables or .env file.")
         logging.error("Please ensure a .env file exists in the project root with your API key:")
         logging.error('GOOGLE_MAPS_API_KEY="YOUR_API_KEY"')
-        sys.exit(1) # Exit if API key is missing
+        sys.exit(1) # Exit if Google API key is missing
 
-    logging.info("Starting CSV geocoding process...")
+    # Initialize Bedrock Client for LLM Categorization
+
+    try:
+        llm_client = AnthropicBedrock(
+            aws_region=AWS_REGION,
+            aws_access_key=AWS_ACCESS_KEY_ID,
+            aws_secret_key=AWS_SECRET_ACCESS_KEY,
+        )
+        logging.info(f"Initialized AnthropicBedrock client for model {CLAUDE_MODEL_ID} in region {AWS_REGION}")
+    except Exception as e:
+        logging.error(f"FATAL: Failed to initialize AnthropicBedrock client: {e}")
+        logging.error("Ensure AWS credentials (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY) and region are configured correctly (environment variables or ~/.aws/credentials).")
+        sys.exit(1)
+
+    logging.info("Starting CSV processing (Geocoding and Categorization)...")
     logging.info(f"Input directory: {INPUT_DIR}")
     logging.info(f"Output directory: {OUTPUT_DIR}")
-    logging.info(f"Cache file: {CACHE_FILE}")
+    logging.info(f"Geocoding Cache file: {GEOCODING_CACHE_FILE}")
+    logging.info(f"Offense Category Cache file: {OFFENSE_CATEGORY_CACHE_FILE}")
 
     # Ensure output directory exists
     os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -190,35 +345,53 @@ if __name__ == "__main__":
 
     logging.info(f"Found {len(csv_files)} CSV files to process.")
 
-    # Load existing cache
-    import json # Ensure json is imported for cache functions
-    geocoding_cache = load_cache(CACHE_FILE)
-    initial_cache_size = len(geocoding_cache)
+    # Load existing caches
+    geocoding_cache = load_json_cache(GEOCODING_CACHE_FILE, "Geocoding Cache")
+    offense_category_cache = load_json_cache(OFFENSE_CATEGORY_CACHE_FILE, "Offense Category Cache")
+    initial_geo_cache_size = len(geocoding_cache)
+    initial_offense_cache_size = len(offense_category_cache)
 
     processed_count = 0
     failed_count = 0
+    # Process files
     for csv_file in csv_files:
-        success = process_csv(csv_file, OUTPUT_DIR, API_KEY, geocoding_cache)
+        success = process_csv(
+            csv_file,
+            OUTPUT_DIR,
+            API_KEY,
+            geocoding_cache,
+            llm_client,
+            offense_category_cache # Pass necessary caches and client
+        )
         if success:
             processed_count += 1
         else:
             failed_count += 1
+        # --- Save caches periodically or after each file? ---
+        # Saving after each file is safer but slower. Saving at end is faster.
+        # Let's save at the end for now for performance. Consider changing if script crashes often.
 
-    # Save updated cache only if it has changed
-    if len(geocoding_cache) > initial_cache_size:
-        save_cache(geocoding_cache, CACHE_FILE)
+    # Save updated caches if they changed
+    if len(geocoding_cache) > initial_geo_cache_size:
+        save_json_cache(geocoding_cache, GEOCODING_CACHE_FILE, "Geocoding Cache")
     else:
-        logging.info("Cache not modified, skipping save.")
+        logging.info("Geocoding cache not modified, skipping save.")
 
-    logging.info("--- Geocoding Process Summary ---")
+    if len(offense_category_cache) > initial_offense_cache_size:
+        save_json_cache(offense_category_cache, OFFENSE_CATEGORY_CACHE_FILE, "Offense Category Cache")
+    else:
+        logging.info("Offense category cache not modified, skipping save.")
+
+    logging.info("--- Processing Summary ---")
     logging.info(f"Successfully processed: {processed_count} files")
     logging.info(f"Failed to process: {failed_count} files")
     logging.info(f"Total unique locations cached: {len(geocoding_cache)}")
-    logging.info("---------------------------------")
+    logging.info(f"Total unique offense types cached: {len(offense_category_cache)}")
+    logging.info("--------------------------")
 
     if failed_count > 0:
         logging.warning("Some files failed during processing. Check logs above for details.")
-        sys.exit(1)
+        sys.exit(1) # Exit with error code if any file failed
     else:
         logging.info("All files processed successfully.")
-        sys.exit(0) 
+        sys.exit(0) # Exit successfully 

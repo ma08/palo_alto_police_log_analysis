@@ -35,10 +35,11 @@ Our most recent analysis has identified:
    - Reports cover the period from March 19 to April 18, 2025
 
 2. **Data Processing**:
-   - **Markdown conversion**: PDFs are converted to markdown text using Microsoft's markitdown tool
-   - **LLM extraction**: Structured data extracted using Claude 3.7 Sonnet via AWS Bedrock
-   - Data is normalized and categorized by location and incident type
-   - Streets and neighborhoods are identified from location data
+   - **Markdown conversion**: PDFs are converted to markdown text using Microsoft's markitdown tool.
+   - **LLM extraction**: Structured data (case #, date, time, offense, location) extracted using Claude via AWS Bedrock (`src/markdown_to_csv.py`).
+   - **Geocoding & Categorization**: Location strings are geocoded using Google Places API, and raw offense types are categorized into broader groups using Claude (`scripts/process_all_csvs.py`).
+   - **Data Consolidation**: Processed data is combined and formatted for website use (`scripts/prepare_website_data.py`).
+   - Streets and neighborhoods are identified from location data (part of `src/analyze_csv_data.py` and potentially geocoding interpretation).
 
 3. **Data Analysis**:
    - Safety scores calculated based on incident frequency and severity
@@ -57,18 +58,18 @@ Our most recent analysis has identified:
 
 To support the analysis and visualization, several scripts process the raw data:
 
-1.  **Geocoding (`scripts/process_all_csvs.py`)**:
-    - Reads all CSV files from `data/csv_files/`.
-    - For each unique location string, queries the Google Places API (using `src/geocoding_utils.py`) to get latitude, longitude, formatted address, place types, etc.
-    - Appends geocoding information as new columns.
-    - Implements caching (`data/geocoding_cache.json`) to minimize API calls.
-    - Saves the augmented dataframes to `data/processed_csv_files/` with `_geocoded.csv` suffix.
+1.  **Geocoding and Categorization (`scripts/process_all_csvs.py`)**:
+    - Reads all raw CSV files from `data/csv_files/`.
+    - **Offense Categorization**: For each unique raw `offense_type`, queries a Claude model via AWS Bedrock to assign it to one of the predefined categories below. Results are cached (`data/offense_category_cache.json`) to minimize LLM calls.
+    - **Geocoding**: For each unique `location` string, queries the Google Places API (using `src/geocoding_utils.py`) to get latitude, longitude, formatted address, place types, etc. Results are cached (`data/geocoding_cache.json`).
+    - Appends geocoding information and the `offense_category` as new columns.
+    - Saves the augmented dataframes to `data/processed_csv_files/` with `_processed.csv` suffix.
     - Notes any CSV parsing errors encountered in `README.md`.
 
 2.  **Website Data Consolidation (`scripts/prepare_website_data.py`)**:
-    - Reads all `*_geocoded.csv` files from `data/processed_csv_files/`.
+    - Reads all `*_processed.csv` files from `data/processed_csv_files/`.
     - Combines them into a single dataset.
-    - Selects relevant columns needed for the frontend map.
+    - Selects relevant columns needed for the frontend map (including `offense_category`).
     - Filters out records missing valid latitude/longitude.
     - Saves the consolidated data as a single JSON file (`website/public/data/incidents.json`) to be easily consumed by the frontend application.
 
@@ -169,7 +170,18 @@ All data is sourced from the [Palo Alto Police Department's public information p
 - **New Data Extraction Pipeline**: Replaced vision-based extraction with a two-step process:
   1. Microsoft markitdown for better PDF text extraction
   2. Claude 3.7 Sonnet for structured data parsing
-- **Better Data Normalization**: Improved street name extraction and offense categorization
+- **Better Data Normalization**: Improved street name extraction.
+- **LLM-Powered Offense Categorization**: Added a step using Claude to group detailed offense types into 10 broader categories for clearer analysis and filtering:
+  1.  `Theft`
+  2.  `Burglary`
+  3.  `Vehicle Crime`
+  4.  `Traffic Incidents`
+  5.  `Property Crime`
+  6.  `Violent/Person Crime`
+  7.  `Fraud/Financial Crime`
+  8.  `Public Order/Disturbance`
+  9.  `Warrant/Arrest`
+  10. `Administrative/Other`
 - **More Comprehensive Analysis**: Increased from 37 to 401 incidents analyzed
 - **Temporal Analysis**: Added day-of-week analysis to identify temporal patterns
 - **Deeper Location-Based Insights**: Improved breakdown of incident types by location

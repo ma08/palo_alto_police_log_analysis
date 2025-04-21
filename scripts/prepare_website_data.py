@@ -23,6 +23,7 @@ RELEVANT_COLUMNS = [
     'date',
     'time',
     'offense_type',
+    'offense_category',
     'location', # Original location string
     'latitude',
     'longitude',
@@ -38,10 +39,15 @@ def extract_date_from_filename(filename):
     Returns a tuple of (original_date_string, parsed_datetime_object)
     """
     # Extract date part using regex
-    match = re.search(r'([a-z]+-\d+-\d+)', os.path.basename(filename).lower())
+    # Updated regex to handle both _geocoded.csv and _processed.csv
+    match = re.search(r'([a-z]+-\d+-\d+).*(?:_geocoded|_processed)\.csv', os.path.basename(filename).lower())
     if not match:
-        return None, None
-    
+        # Try matching without the suffixes if the first attempt fails
+        match = re.search(r'([a-z]+-\d+-\d+)', os.path.basename(filename).lower())
+        if not match:
+             logging.warning(f"Could not extract date string from filename: {filename}")
+             return None, None
+
     date_str = match.group(1)  # e.g., "april-07-2025"
     
     try:
@@ -61,13 +67,16 @@ def extract_date_from_filename(filename):
 def prepare_data_for_website():
     """Loads processed CSVs, combines them, filters, and saves as JSON for the website."""
     logging.info(f"Looking for processed CSV files in: {PROCESSED_CSV_DIR}")
-    csv_files = glob.glob(os.path.join(PROCESSED_CSV_DIR, '*_geocoded.csv'))
+    # Changed glob pattern to find *_processed.csv
+    csv_files = glob.glob(os.path.join(PROCESSED_CSV_DIR, '*_processed.csv'))
 
     if not csv_files:
-        logging.error(f"No *_geocoded.csv files found in {PROCESSED_CSV_DIR}. Cannot prepare website data.")
+        # Updated error message
+        logging.error(f"No *_processed.csv files found in {PROCESSED_CSV_DIR}. Cannot prepare website data. Did process_all_csvs.py run successfully?")
         return
 
-    logging.info(f"Found {len(csv_files)} geocoded CSV files to combine.")
+    # Updated log message
+    logging.info(f"Found {len(csv_files)} processed CSV files to combine.")
 
     all_data_frames = []
     for f in csv_files:
@@ -97,7 +106,28 @@ def prepare_data_for_website():
 
     # Combine all dataframes
     combined_df = pd.concat(all_data_frames, ignore_index=True)
-    logging.info(f"Combined data contains {len(combined_df)} total records.")
+    logging.info(f"Combined data contains {len(combined_df)} total records before deduplication.")
+    initial_count = len(combined_df)
+    # Define columns to identify unique incidents
+    deduplication_columns = ['case_number', 'date']
+    # Ensure the columns exist before trying to deduplicate
+    if all(col in combined_df.columns for col in deduplication_columns):
+        combined_df.drop_duplicates(subset=deduplication_columns, keep='first', inplace=True)
+        deduplicated_count = len(combined_df)
+        records_removed = initial_count - deduplicated_count
+        if records_removed > 0:
+             logging.info(f"Removed {records_removed} duplicate records based on {', '.join(deduplication_columns)}.")
+        else:
+             logging.info(f"No duplicate records found based on {', '.join(deduplication_columns)}.")
+    else:
+        logging.warning(f"Cannot perform deduplication. Missing one or more key columns: {deduplication_columns}")
+
+    # Ensure necessary columns for the website exist, including the new category
+    required_web_cols = ['latitude', 'longitude', 'case_number', 'offense_category']
+    missing_web_cols = [col for col in required_web_cols if col not in combined_df.columns]
+    if missing_web_cols:
+        logging.error(f"Essential columns for website ({', '.join(missing_web_cols)}) are missing in combined data. Cannot create website JSON.")
+        return
 
     # Select relevant columns
     # Ensure all expected columns exist, handle missing ones gracefully
@@ -135,9 +165,12 @@ def prepare_data_for_website():
         logging.warning("No valid geocoded data remaining after filtering. Output JSON will be empty.")
         output_data = []
     else:
-        logging.info(f"{len(filtered_df)} valid geocoded records remaining for website.")
+        # Log based on the correct filtered data
+        logging.info(f"{len(filtered_df)} valid records with lat/lon remaining for website.")
         # Convert DataFrame to list of dictionaries (records format)
-        output_data = filtered_df.to_dict(orient='records')
+        # Handle potential NaN values before converting to JSON
+        # Convert specific pandas types (like NA) to None for JSON compatibility
+        output_data = filtered_df.where(pd.notnull(filtered_df), None).to_dict(orient='records')
 
     # Create output directory if it doesn't exist
     os.makedirs(WEBSITE_DATA_DIR, exist_ok=True)
