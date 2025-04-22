@@ -1,0 +1,66 @@
+Incidents Reported on Middlefield Road
+=====================================
+
+--- april-02-2025-police-report-log.csv ---
+- Location: 4000 MIDDLEFIELD RD
+  Incident: Vandalism:damage property (M)
+
+--- april-04-2025-police-report-log.csv ---
+- Location: 328 MIDDLEFIELD RD
+  Incident: Petty theft - From motor vehicle (M)
+- Location: 3785 MIDDLEFIELD RD
+  Incident: Vandalism:deface property (F)
+- Location: MIDDLEFIELD RD
+  Incident: DFCS Cross Report Information Only
+
+--- april-07-2025-police-report-log.csv ---
+- Location: MIDDLEFIELD RD
+  Incident: Mental Health Evaluation
+
+--- april-10-2025-police-report-log.csv ---
+- Location: FOREST AVE/MIDDLEFIELD RD
+  Incident: Vehicle Accident/Non Injury
+- Location: MIDDLEFIELD RD/MAYVIEW AVE
+  Incident: Vehicle Accident/Injury
+
+--- april-11-2025-police-report-log.csv ---
+- Location: MIDDLEFIELD RD
+  Incident: Theft of personal property - All other larceny (M)
+
+--- april-15-2025-police-report-log.csv ---
+- Location: 2675 MIDDLEFIELD RD
+  Incident: Vehicle Accident/Non Injury
+
+--- april-17-2025-police-report-log.csv ---
+- Location: E CHARLESTON RD/MIDDLEFIELD RD
+  Incident: Vehicle Accident/Non Injury
+
+--- march-20-2025-police-report-log.csv ---
+- Location: 3800 MIDDLEFIELD RD
+  Incident: Obstruct/resist/etc public/peace officer/emergency med tech (M)
+- Location: 3922 MIDDLEFIELD RD
+  Incident: Theft of personal property - Shoplifting (M)
+- Location: 3700 MIDDLEFIELD RD
+  Incident: Outside Warrant Arrest - Felony
+
+--- march-21-2025-police-report-log.csv ---
+- Location: 3085 MIDDLEFIELD RD
+  Incident: Grand theft:money/labor/property - All other larceny (F)
+
+--- march-24-2025-police-report-log.csv ---
+- Location: 3922 MIDDLEFIELD RD
+  Incident: Theft of personal property - Shoplifting (M)
+
+--- march-27-2025-police-report-log.csv ---
+- Location: MIDDLEFIELD RD
+  Incident: Medical Assist
+
+--- march-31-2025-police-report-log.csv ---
+- Location: 2723 MIDDLEFIELD RD
+  Incident: Get credit/etc others id - Impersonation (F)
+- Location: 2850 MIDDLEFIELD RD
+  Incident: Grand theft:money/labor/property - All other larceny (F)
+- Location: MIDDLEFIELD RD
+  Incident: Mental Health Evaluation
+- Location: FAIRVIEW WAY/W MIDDLEFIELD RD
+  Incident: Outside Assist

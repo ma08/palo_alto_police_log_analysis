@@ -1,0 +1,4 @@
+case_number,date,time,offense_type,location,arrest_info,offense_category,latitude,longitude,formatted_address,google_maps_uri,place_types,location_interpretation
+ MICHAEL (DOB: 1957-09-11, M, C,PALO ALTO, 372 PC, Booked),Administrative/Other,,,,,,not_found
+ VINCENT BERNARD (DOB: 1981-06-03, M, B,SAN JOSE, Outside Warrant/M, Booked),Administrative/Other,37.4268261,-122.14221510000002,"270 Grant Ave # 204, Palo Alto, CA 94306, USA",https://maps.google.com/?cid=9598473753521511468,"local_government_office,government_office,point_of_interest,establishment",specific_place
+ DANIEL RAY (DOB: 1981-07-16, M, B,SAN LEANDRO, 666.1(A)(1) PC, Booked),Administrative/Other,,,,,,not_found

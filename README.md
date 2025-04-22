@@ -1,195 +1,155 @@
 # Palo Alto Police Report Analysis
 
-This project analyzes police reports from Palo Alto to help identify safer neighborhoods for potential residents. It scrapes, processes, and analyzes police report data from the [Palo Alto Police Department's public logs](https://www.paloalto.gov/departments/police/public-information-portal/police-report-log).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Latest Analysis Results (April 19, 2025)
+This project provides an end-to-end pipeline to download, process, and analyze daily police report logs (PDFs) from the City of Palo Alto's public portal. The goal is to extract structured incident data (type, time, location), enhance it with geocoding and categorization, and prepare it for visualization and further analysis.
 
-Our most recent analysis has identified:
+This repository is intended to be open-sourced to share the methodology and potentially enable adaptation for other similar public data sources.
 
-- **Areas with fewer safety concerns**: CLARK/WAY, PASTEUR/DR, TULIP, PRINCETON, Charleston, and Forest Ave
-- **Areas with more incidents**: El Camino (58 incidents), Alma (24), and University Ave (18)
-- **Areas with higher safety concerns**: Park, ROOSEVELT, CREEK/DR, Cambridge, and DANA
-- **Common incident types**: Theft (38.2%), Other incidents (23.2%), Traffic incidents (15.5%)
+## Project Goal
 
-> **UPDATE**: We've implemented a new LLM-powered pipeline using Microsoft's markitdown for better text extraction and Claude 3.7 Sonnet for structured data extraction. This improved our incident count from 37 to 401!
+The primary goal is to create a reproducible and automated workflow for transforming publicly available, unstructured police report PDFs into structured, analyzable data. Key objectives include:
 
-### Key Artifacts
-- [CSV Safety Analysis](results/csv_safety_analysis.md) - Latest comprehensive report (recommended)
-- [Top Incident Locations](results/csv_top_locations.png) - Streets with most incidents
-- [Incident Types Distribution](results/csv_offense_categories.png) - Categories of incidents
-- [Safety Score Comparison](results/csv_location_safety.png) - Areas by safety ranking
-- [Incidents by Day of Week](results/csv_day_of_week.png) - Temporal patterns
+-   Automated downloading of daily PDF reports based on date ranges.
+-   Robust extraction of text content from PDFs.
+-   Leveraging Large Language Models (LLMs) for structured data extraction (CSV format).
+-   Enhancing data with geographical coordinates via geocoding APIs.
+-   Standardizing offense descriptions using LLM-based categorization.
+-   Generating a clean, consolidated dataset suitable for frontend applications or data analysis tools.
 
-## Project Overview
+## Data Pipeline
 
-- Downloads police reports (PDFs) from the last 30 days
-- Extracts structured data from PDF reports
-- Analyzes crime frequency by location and type
-- Generates visualizations and statistical summaries
-- Produces a safety report with neighborhood recommendations
+The core process involves several automated steps, orchestrated by `run_pipeline.py`, which calls functions imported from the relevant pipeline step modules:
 
-## End-to-End Process
+```mermaid
+graph TD
+    A[Download PDFs<br>(pipeline/steps/step_1_download.py)<br>Input: Date Range<br>Output: data/raw_pdfs/] --> B(Extract Markdown<br>(pipeline/steps/step_2_extract_text.py)<br>Input: data/raw_pdfs/<br>Output: markitdown_output/);
+    B --> C{LLM Markdown to CSV<br>(pipeline/steps/step_3_extract_structured.py)<br>Input: markitdown_output/<br>Output: data/csv_files/};
+    C --> D[Process CSVs<br>(pipeline/steps/step_4_process_data.py)<br>Geocode (Google) & Categorize (LLM)<br>Input: data/csv_files/<br>Output: data/processed_csv_files/];
+    D --> E[Prepare Website Data<br>(pipeline/steps/step_5_prepare_output.py)<br>Input: data/processed_csv_files/<br>Output: website/public/data/incidents.json];
+    F[Source: Police Dept Website URL Pattern] --> A;
+    G[Google Places API] --> D;
+    H[LLM API (e.g., Claude/Bedrock)] --> C;
+    I[LLM API (e.g., Claude/Bedrock)] --> D;
 
-1. **Data Collection**: 
-   - The system downloads PDF reports from Palo Alto PD's public portal
-   - Reports cover the period from March 19 to April 18, 2025
+```
 
-2. **Data Processing**:
-   - **Markdown conversion**: PDFs are converted to markdown text using Microsoft's markitdown tool.
-   - **LLM extraction**: Structured data (case #, date, time, offense, location) extracted using Claude via AWS Bedrock (`src/markdown_to_csv.py`).
-   - **Geocoding & Categorization**: Location strings are geocoded using Google Places API, and raw offense types are categorized into broader groups using Claude (`scripts/process_all_csvs.py`).
-   - **Data Consolidation**: Processed data is combined and formatted for website use (`scripts/prepare_website_data.py`).
-   - Streets and neighborhoods are identified from location data (part of `src/analyze_csv_data.py` and potentially geocoding interpretation).
+**Pipeline Stages:**
 
-3. **Data Analysis**:
-   - Safety scores calculated based on incident frequency and severity
-   - Weighted algorithm assigns higher scores to violent crimes
-   - Areas ranked by relative safety concerns
-   - Day-of-week patterns analyzed to identify temporal trends
+1.  **Download PDFs (`pipeline.steps.step_1_download.main`)**: Downloads daily police report PDFs from the Palo Alto website for a specified date range based on a URL pattern. Saves files to `data/raw_pdfs/`. Requires `--start-date` and `--end-date`.
+2.  **PDF to Markdown (`pipeline.steps.step_2_extract_text.process_all_pdfs`)**: Converts the downloaded PDFs into markdown format using Microsoft's `markitdown` tool. Takes PDFs from `data/raw_pdfs/` and saves markdown files to `markitdown_output/`.
+3.  **Markdown to CSV (`pipeline.steps.step_3_extract_structured.main`)**: Parses the markdown files, using an LLM (configured for Claude via AWS Bedrock) to extract structured data (case #, date, time, offense, location) into individual CSV files. Takes markdown from `markitdown_output/` and saves raw CSVs to `data/csv_files/`.
+4.  **Process CSVs (`pipeline.steps.step_4_process_data.run_processing`)**: Reads raw CSVs from `data/csv_files/`.
+    *   **Geocoding**: Uses the Google Places API (via `pipeline/utils/geocoding.py`) to convert location strings into coordinates and formatted addresses. Caches results in `data/geocoding_cache.json`.
+    *   **Offense Categorization**: Uses an LLM (configured for Claude via AWS Bedrock) to map raw offense descriptions to predefined categories. Caches results in `data/offense_category_cache.json`.
+    *   Saves the processed and augmented dataframes to `data/processed_csv_files/`.
+5.  **Prepare Website Data (`pipeline.steps.step_5_prepare_output.prepare_data_for_website`)**: Reads processed CSVs from `data/processed_csv_files/`. Consolidates data, selects relevant columns, ensures correct data types (`time` as minutes-past-midnight number, `case_number` as string), filters records missing coordinates, and saves the final data ready for the web visualization as `website/public/data/incidents.json`.
 
-4. **Visualization & Reporting**:
-   - Charts generated for incident locations, types, and temporal patterns
-   - Comprehensive safety report with neighborhood recommendations
-   - Location safety comparison between safer and higher-concern areas
-   - Incident type distribution by location
-   - **(New)** Interactive map visualization via the `website/` Next.js application.
+## Data Storage
 
-### Data Preparation Scripts
+Intermediate and final data is stored in the following directories:
 
-To support the analysis and visualization, several scripts process the raw data:
-
-1.  **Geocoding and Categorization (`scripts/process_all_csvs.py`)**:
-    - Reads all raw CSV files from `data/csv_files/`.
-    - **Offense Categorization**: For each unique raw `offense_type`, queries a Claude model via AWS Bedrock to assign it to one of the predefined categories below. Results are cached (`data/offense_category_cache.json`) to minimize LLM calls.
-    - **Geocoding**: For each unique `location` string, queries the Google Places API (using `src/geocoding_utils.py`) to get latitude, longitude, formatted address, place types, etc. Results are cached (`data/geocoding_cache.json`).
-    - Appends geocoding information and the `offense_category` as new columns.
-    - Saves the augmented dataframes to `data/processed_csv_files/` with `_processed.csv` suffix.
-    - Notes any CSV parsing errors encountered in `README.md`.
-
-2.  **Website Data Consolidation (`scripts/prepare_website_data.py`)**:
-    - Reads all `*_processed.csv` files from `data/processed_csv_files/`.
-    - Combines them into a single dataset.
-    - Selects relevant columns needed for the frontend map (including `offense_category`).
-    - Filters out records missing valid latitude/longitude.
-    - Saves the consolidated data as a single JSON file (`website/public/data/incidents.json`) to be easily consumed by the frontend application.
+-   `data/raw_pdfs/`: Downloaded raw PDF reports.
+-   `markitdown_output/`: Markdown files generated from PDFs.
+-   `data/csv_files/`: Raw CSV files extracted from markdown using an LLM.
+-   `data/processed_csv_files/`: Processed CSV files with added geocoding and offense categories.
+-   `data/geocoding_cache.json`: Cache for Google Places API results to reduce costs.
+-   `data/offense_category_cache.json`: Cache for LLM offense categorization results to reduce costs.
+-   `website/public/data/incidents.json`: Final consolidated JSON data consumed by the frontend visualization.
+-   `results/`: May contain analysis outputs like charts and markdown reports if analysis scripts (e.g., from `run_csv_pipeline.py` or others) are run.
 
 ## Setup
 
 ```bash
-# Clone the repository
-git clone [repository-url]
+# Clone the repository (including the website submodule)
+git clone --recurse-submodules [repository-url]
 cd palo_alto_police_report_analysis
 
 # Create and activate virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 
 # Install dependencies
 pip install -r requirements.txt
-pip install 'markitdown[pdf]'  # For PDF to markdown conversion
+# Required for Step 2: PDF to Markdown conversion
+pip install 'markitdown[pdf]'
 
-# Configure AWS credentials for Claude
+# Configure API Keys and Credentials
 cp .env.example .env
-# Edit .env with your AWS credentials
+# Edit .env with your credentials:
+# - Google Places API Key (for Step 4 Geocoding)
+# - AWS Credentials (Access Key ID, Secret Access Key, Region for Step 3 & 4 LLM calls via Bedrock)
 ```
 
 ## Usage
 
-You can run the entire CSV-based analysis pipeline with:
+The primary way to execute the pipeline is using the `run_pipeline.py` script.
+
+**Run the full pipeline:**
 
 ```bash
-python run_csv_pipeline.py
+python run_pipeline.py --start-date YYYY-MM-DD --end-date YYYY-MM-DD
 ```
 
-This will:
-1. Convert PDF reports to markdown text
-2. Extract structured data into CSV using Claude
-3. Analyze the data and generate visualizations
-4. Create a comprehensive safety report
+**Run starting from a specific step:**
 
-For running just the individual steps:
+Use the `--start-step` argument (1-5) to begin execution at a particular stage. This is useful for re-running later parts of the pipeline without repeating earlier steps.
 
 ```bash
-# Step 1: Convert PDFs to markdown
-python -c "from src.markitdown_extractor import convert_pdf_to_markdown; convert_pdf_to_markdown('data/raw/your_file.pdf')"
-
-# Step 2: Process markdown to CSV with Claude
-python -c "from src.markdown_to_csv import process_single_file; process_single_file('markitdown_output/your_file.md')"
-
-# Step 3: Analyze CSV data
-python -c "from src.analyze_csv_data import load_csv_files, clean_data, analyze_data, generate_comprehensive_report; df = load_csv_files(); clean_df = clean_data(df); stats = analyze_data(clean_df); generate_comprehensive_report(clean_df, stats)"
+# Example: Run only Step 4 (Process CSVs) and Step 5 (Prepare Website Data)
+python run_pipeline.py --start-date YYYY-MM-DD --end-date YYYY-MM-DD --start-step 4
 ```
 
-## Results Directory
+**Arguments:**
 
-The analysis produces several outputs in the `results/` directory:
+-   `--start-date`: Required. The first date for which to download reports (YYYY-MM-DD).
+-   `--end-date`: Required. The last date for which to download reports (YYYY-MM-DD).
+-   `--start-step`: Optional. The pipeline step number to start from (1-5, default: 1).
 
-- `csv_safety_analysis.md`: Latest comprehensive safety report (April 19, 2025)
-- `csv_top_locations.png`: Streets ranked by incident count
-- `csv_offense_categories.png`: Distribution of incident types
-- `csv_location_safety.png`: Safety concern score by location
-- `csv_day_of_week.png`: Incident patterns throughout the week
-
-Legacy outputs:
-- `comprehensive_safety_analysis.md`: Previous vision-based analysis
-- `summary_for_house_hunting.md`: Tailored recommendations for families
-- `safety_report.md`: Previous technical summary with safety metrics
+**Note:** Ensure all necessary API keys are configured in `.env` and dependencies installed before running. The script calls the internal functions of the pipeline stages sequentially.
 
 ## Project Structure
 
-- `src/`: Source code modules
-  - `markdown_to_csv.py`: Processes markdown files with Claude to extract structured data
-  - `markitdown_extractor.py`: Converts PDFs to markdown text
-  - `analyze_csv_data.py`: Analyzes extracted data and generates visualizations
-- `run_csv_pipeline.py`: Runs the entire CSV-based pipeline
-- `data/`: Directory for data files
-  - `raw/`: Raw PDF files
-  - `csv_files/`: CSV data extracted from markdown
-  - `processed/`: Combined and cleaned data
-- `markitdown_output/`: Markdown versions of police report PDFs
-- `results/`: Analysis outputs and visualizations
-- `venv/`: Python virtual environment
-- `requirements.txt`: Required Python packages
-- `.env`: Configuration for AWS credentials
-
-## Data Processing Notes
-
-- **Geocoding Script (`scripts/process_all_csvs.py`)**: 
-  - During the run on April 20, 2025, this script failed to process the following files due to parsing errors (incorrect number of fields detected on specific lines):
-    - `data/csv_files/april-17-2025-police-report-log.csv` (Error on line 14)
-    - `data/csv_files/march-31-2025-police-report-log.csv` (Error on line 6)
-  - These files were skipped, but the other 20 CSVs in the directory were successfully processed and saved to `data/processed_csv_files`.
-  - The geocoding results for successfully processed unique locations are cached in `data/geocoding_cache.json`.
+-   `run_pipeline.py`: Orchestrates the full data processing pipeline execution.
+-   `pipeline/`: Core Python package for the data processing pipeline.
+    -   `steps/`: Modules for each distinct pipeline stage.
+        -   `step_1_download.py`: Step 1: Downloads PDFs.
+        -   `step_2_extract_text.py`: Step 2: Converts PDFs to markdown.
+        -   `step_3_extract_structured.py`: Step 3: Extracts structured data (CSV) from markdown via LLM.
+        -   `step_4_process_data.py`: Step 4: Geocodes locations and categorizes offenses.
+        -   `step_5_prepare_output.py`: Step 5: Consolidates data for the website JSON.
+    -   `utils/`: Utility modules shared across pipeline steps.
+        -   `geocoding.py`: Helper for Google Places API calls.
+        -   `llm.py`: Helper(s) for LLM interactions (e.g., Bedrock).
+-   `analysis/`: Scripts for analyzing the output data (separate from the processing pipeline).
+    -   `analyze_csv_data.py`: Example analysis script.
+    -   `analyze_markitdown_data.py`: Example analysis script.
+-   `data/`: Data directories (see Data Storage section).
+-   `markitdown_output/`: Intermediate markdown files.
+-   `results/`: Analysis outputs (charts, reports) generated by scripts in `analysis/`.
+-   `website/`: Frontend Next.js application (Git Submodule) for visualizing the data. See `website/README.md`.
+-   `archive/`: Contains outdated scripts and previous analysis files.
+-   `venv/`: Python virtual environment (if created).
+-   `requirements.txt`: Core Python packages (now at root level).
+-   `.env.example`, `.env`: Configuration for API keys and credentials.
+-   `.gitignore`, `README.md`, etc.: Project configuration and documentation.
 
 ## Data Sources
 
-All data is sourced from the [Palo Alto Police Department's public information portal](https://www.paloalto.gov/departments/police/public-information-portal/police-report-log), which provides police report logs for the last 30 days.
-
-## Improvements in This Version
-
-- **New Data Extraction Pipeline**: Replaced vision-based extraction with a two-step process:
-  1. Microsoft markitdown for better PDF text extraction
-  2. Claude 3.7 Sonnet for structured data parsing
-- **Better Data Normalization**: Improved street name extraction.
-- **LLM-Powered Offense Categorization**: Added a step using Claude to group detailed offense types into 10 broader categories for clearer analysis and filtering:
-  1.  `Theft`
-  2.  `Burglary`
-  3.  `Vehicle Crime`
-  4.  `Traffic Incidents`
-  5.  `Property Crime`
-  6.  `Violent/Person Crime`
-  7.  `Fraud/Financial Crime`
-  8.  `Public Order/Disturbance`
-  9.  `Warrant/Arrest`
-  10. `Administrative/Other`
-- **More Comprehensive Analysis**: Increased from 37 to 401 incidents analyzed
-- **Temporal Analysis**: Added day-of-week analysis to identify temporal patterns
-- **Deeper Location-Based Insights**: Improved breakdown of incident types by location
+All initial data is sourced from the [Palo Alto Police Department's public information portal](https://www.paloalto.gov/departments/police/public-information-portal/police-report-log). The pipeline relies on generating URLs based on dates, as the portal itself may only display recent links. No guarantees are made about the continued availability or format of this source data.
 
 ## Limitations
 
-- Analysis is limited to the last 30 days of reports
-- Street name extraction may not be perfect in all cases
-- Safety scoring is a simplified model based on incident type and frequency
-- Some incidents may have been missed or duplicated in the extraction process
-- This data should be used as one of many factors in housing decisions
+-   **Source Data Dependency:** Relies on the City of Palo Alto maintaining the current URL pattern and PDF format for reports. Changes will break the pipeline.
+-   **Extraction Accuracy:** Data quality depends heavily on the `markitdown` conversion accuracy and the LLM's ability to correctly parse the markdown and extract structured data. Errors or inconsistencies in the PDFs can lead to extraction failures or inaccuracies.
+-   **Geocoding Accuracy:** Relies on the Google Places API's ability to interpret location strings. Ambiguous or poorly formatted locations may result in incorrect or missing coordinates.
+-   **Categorization Subjectivity:** LLM-based offense categorization depends on the prompt and model used. Results may vary or require fine-tuning.
+-   **API Keys & Costs:** Requires active, correctly configured API keys for Google Places and an LLM provider (e.g., AWS Bedrock). Use of these services incurs costs. Caching is implemented to mitigate this.
+
+## Contributing
+
+Contributions are welcome! If you find issues or have suggestions for improvements, please open an issue or submit a pull request. Please ensure any contributions maintain the project's goal of a reproducible and automated workflow.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details (assuming a LICENSE file will be added).

@@ -1,30 +1,30 @@
 # Palo Alto Safety Analysis Report (CSV Data)
 
-*Generated on: 2025-04-19*
+*Generated on: 2025-04-21*
 
 ## Overview
 
-This report analyzes 401 police incidents extracted from Palo Alto Police Department logs from 2024-10-12 to 2025-04-16. The analysis is intended to help identify safer areas for housing in Palo Alto based on police incident reports.
+This report analyzes 979 police incidents extracted from Palo Alto Police Department logs from 2024-02-19 to 2025-04-16. The analysis is intended to help identify safer areas for housing in Palo Alto based on police incident reports.
 
 ## Incident Locations
 
 The following streets have the highest number of reported incidents:
 
-- **El Camino**: 58 incidents
-- **Alma**: 24 incidents
-- **University**: 18 incidents
-- **Middlefield**: 15 incidents
-- **Emerson**: 14 incidents
-- **Forest**: 14 incidents
-- **Bryant**: 12 incidents
-- **Embarcadero**: 12 incidents
-- **Ramona**: 11 incidents
-- **Hamilton**: 10 incidents
-- **Arastradero**: 9 incidents
-- **High**: 8 incidents
-- **BAYSHORE/RD**: 7 incidents
-- **Waverley**: 7 incidents
-- **Webster**: 7 incidents
+- **El Camino**: 142 incidents
+- **Alma**: 53 incidents
+- **University**: 50 incidents
+- **Bryant**: 39 incidents
+- **Middlefield**: 37 incidents
+- **Emerson**: 34 incidents
+- **Forest**: 33 incidents
+- **Hamilton**: 25 incidents
+- **Embarcadero**: 25 incidents
+- **Arastradero**: 21 incidents
+- **California**: 18 incidents
+- **Waverley**: 18 incidents
+- **High**: 17 incidents
+- **Charleston**: 15 incidents
+- **Park**: 14 incidents
 
 ![Top Incident Locations](csv_top_locations.png)
 
@@ -32,16 +32,17 @@ The following streets have the highest number of reported incidents:
 
 The incidents have been categorized as follows:
 
-- **Theft**: 153 incidents (38.2%)
-- **Other**: 93 incidents (23.2%)
-- **Traffic**: 62 incidents (15.5%)
-- **Property Damage**: 26 incidents (6.5%)
-- **Warrant**: 22 incidents (5.5%)
-- **Assault**: 17 incidents (4.2%)
-- **Mental Health**: 16 incidents (4.0%)
-- **Noise/Disturbance**: 5 incidents (1.2%)
-- **Drugs/Alcohol**: 5 incidents (1.2%)
-- **Fraud**: 2 incidents (0.5%)
+- **Theft**: 360 incidents (36.8%)
+- **Other**: 225 incidents (23.0%)
+- **Traffic**: 190 incidents (19.4%)
+- **Property Damage**: 48 incidents (4.9%)
+- **Warrant**: 42 incidents (4.3%)
+- **Assault**: 33 incidents (3.4%)
+- **Mental Health**: 28 incidents (2.9%)
+- **Unknown**: 19 incidents (1.9%)
+- **Drugs/Alcohol**: 15 incidents (1.5%)
+- **Noise/Disturbance**: 10 incidents (1.0%)
+- **Fraud**: 9 incidents (0.9%)
 
 ![Offense Categories](csv_offense_categories.png)
 
@@ -49,13 +50,13 @@ The incidents have been categorized as follows:
 
 The distribution of incidents across days of the week:
 
-- **Monday**: 84 incidents (20.9%)
-- **Tuesday**: 62 incidents (15.5%)
-- **Wednesday**: 66 incidents (16.5%)
-- **Thursday**: 52 incidents (13.0%)
-- **Friday**: 48 incidents (12.0%)
-- **Saturday**: 48 incidents (12.0%)
-- **Sunday**: 41 incidents (10.2%)
+- **Monday**: 165 incidents (16.9%)
+- **Tuesday**: 149 incidents (15.2%)
+- **Wednesday**: 170 incidents (17.4%)
+- **Thursday**: 160 incidents (16.3%)
+- **Friday**: 119 incidents (12.2%)
+- **Saturday**: 102 incidents (10.4%)
+- **Sunday**: 82 incidents (8.4%)
 
 ![Incidents by Day of Week](csv_day_of_week.png)
 
@@ -65,31 +66,31 @@ The distribution of incidents across days of the week:
 
 These areas have fewer incidents and less severe types of incidents:
 
-- **CLARK/WAY**: Safety Score: 1.50 (2.0 incidents)
+- **GREER/RD**: Safety Score: 1.50 (2.0 incidents)
+- **CLARK/WAY**: Safety Score: 1.67 (3.0 incidents)
 - **PASTEUR/DR**: Safety Score: 1.67 (6.0 incidents)
+- **MARIPOSA**: Safety Score: 2.00 (2.0 incidents)
+- **SOUTH**: Safety Score: 2.00 (2.0 incidents)
 - **TULIP**: Safety Score: 2.00 (2.0 incidents)
+- **Oregon**: Safety Score: 2.00 (2.0 incidents)
+- **Warrant/M**: Safety Score: 2.00 (2.0 incidents)
 - **PRINCETON**: Safety Score: 2.00 (2.0 incidents)
-- **Charleston**: Safety Score: 2.17 (6.0 incidents)
-- **Forest**: Safety Score: 2.71 (14.0 incidents)
-- **BRADFORD**: Safety Score: 3.00 (2.0 incidents)
-- **Cowper**: Safety Score: 3.00 (2.0 incidents)
-- **PASTEUR**: Safety Score: 3.00 (5.0 incidents)
-- **Hamilton**: Safety Score: 3.10 (10.0 incidents)
+- **BYRON/ST**: Safety Score: 2.00 (2.0 incidents)
 
 ### Areas with Higher Safety Concerns
 
 These areas have more incidents or more severe types of incidents:
 
-- **Park**: Safety Score: 7.25 (4.0 incidents)
-- **ROOSEVELT**: Safety Score: 7.00 (2.0 incidents)
-- **CREEK/DR**: Safety Score: 7.00 (3.0 incidents)
-- **Cambridge**: Safety Score: 7.00 (3.0 incidents)
+- **WELCH/RD**: Safety Score: 7.33 (3.0 incidents)
+- **CLARK**: Safety Score: 7.00 (2.0 incidents)
+- **HAWTHORNE**: Safety Score: 7.00 (3.0 incidents)
+- **CREEK/DR**: Safety Score: 7.00 (6.0 incidents)
 - **DANA**: Safety Score: 7.00 (2.0 incidents)
-- **HILL/RD**: Safety Score: 7.00 (2.0 incidents)
-- **California**: Safety Score: 6.67 (6.0 incidents)
-- **BIRCH**: Safety Score: 6.33 (3.0 incidents)
-- **VERDE/AVE**: Safety Score: 6.33 (3.0 incidents)
-- **FERNE**: Safety Score: 6.33 (3.0 incidents)
+- **HUBBARTT**: Safety Score: 7.00 (2.0 incidents)
+- **JACKSON**: Safety Score: 7.00 (2.0 incidents)
+- **BOYCE**: Safety Score: 7.00 (2.0 incidents)
+- **FAIRFIELD**: Safety Score: 7.00 (2.0 incidents)
+- **HILLVIEW**: Safety Score: 7.00 (2.0 incidents)
 
 ![Location Safety Comparison](csv_location_safety.png)
 
@@ -99,50 +100,50 @@ These areas have more incidents or more severe types of incidents:
 
 Based on our analysis of police reports, these areas may be worth considering for their lower incident rates:
 
+- **GREER/RD** area
 - **CLARK/WAY** area
 - **PASTEUR/DR** area
-- **TULIP** area
-- **PRINCETON** area
-- **Charleston** area
+- **MARIPOSA** area
+- **SOUTH** area
 
 ### Areas That May Need More Research
 
 These areas show higher incident rates and may warrant additional research before making housing decisions:
 
 - **DANA** area
-- **Cambridge** area
 - **CREEK/DR** area
-- **ROOSEVELT** area
-- **Park** area
+- **HAWTHORNE** area
+- **CLARK** area
+- **WELCH/RD** area
 
 ## Additional Patterns and Trends
 
 ### Common Incident Types by Location
 
 **El Camino**:
-- Theft: 31 incidents
-- Traffic: 11 incidents
-- Other: 5 incidents
+- Theft: 70 incidents
+- Traffic: 27 incidents
+- Other: 21 incidents
 
 **Alma**:
-- Traffic: 14 incidents
-- Property Damage: 3 incidents
-- Assault: 2 incidents
+- Traffic: 21 incidents
+- Theft: 8 incidents
+- Other: 8 incidents
 
 **University**:
-- Other: 6 incidents
-- Theft: 6 incidents
-- Traffic: 3 incidents
+- Other: 18 incidents
+- Theft: 13 incidents
+- Traffic: 8 incidents
+
+**Bryant**:
+- Theft: 18 incidents
+- Other: 8 incidents
+- Traffic: 5 incidents
 
 **Middlefield**:
-- Theft: 5 incidents
-- Other: 3 incidents
-- Traffic: 3 incidents
-
-**Emerson**:
-- Theft: 6 incidents
-- Other: 5 incidents
-- Traffic: 2 incidents
+- Theft: 10 incidents
+- Traffic: 10 incidents
+- Other: 8 incidents
 
 ## Conclusion
 

@@ -1,4 +1,5 @@
 import os
+import re
 import glob
 import pandas as pd
 import logging
@@ -8,16 +9,16 @@ import time
 import json # Added for cache handling
 from anthropic import AnthropicBedrock # Added for LLM calls
 
-# Ensure the src directory is discoverable (if running scripts/process_all_csvs.py directly)
-# This might not be needed depending on your project structure and how you run the script
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# Remove sys.path manipulation, rely on package structure
+# import sys
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Assume geocoding_utils is correctly placed or path adjusted
 try:
-    from src.geocoding_utils import search_place, interpret_place_types
+    # from src.geocoding_utils import search_place, interpret_place_types # Old import
+    from pipeline.utils.geocoding import search_place, interpret_place_types # Corrected import
 except ImportError:
-    logging.error("Could not import geocoding_utils. Ensure src/ is in the Python path.")
+    logging.error("Could not import geocoding_utils. Ensure pipeline/utils/geocoding.py exists.")
     sys.exit(1)
 
 # Configure logging
@@ -302,8 +303,9 @@ def process_csv(csv_path, output_dir, api_key, geocoding_cache, llm_client, offe
         logging.error(f"Error saving processed file {output_path}: {e}")
         return False # Indicate failure
 
-# --- Main Execution Block (Updated) ---
-if __name__ == "__main__":
+# --- Main Processing Function (Encapsulated) ---
+def run_processing():
+    """Orchestrates the processing of all CSV files for geocoding and categorization."""
     import re # Import re for LLM response parsing
 
     # Check API key for Geocoding
@@ -311,10 +313,11 @@ if __name__ == "__main__":
         logging.error("FATAL: GOOGLE_MAPS_API_KEY not found in environment variables or .env file.")
         logging.error("Please ensure a .env file exists in the project root with your API key:")
         logging.error('GOOGLE_MAPS_API_KEY="YOUR_API_KEY"')
-        sys.exit(1) # Exit if Google API key is missing
+        # Raise an exception instead of exiting, so the orchestrator can handle it
+        raise EnvironmentError("Missing GOOGLE_MAPS_API_KEY")
 
     # Initialize Bedrock Client for LLM Categorization
-
+    llm_client = None # Initialize to None
     try:
         llm_client = AnthropicBedrock(
             aws_region=AWS_REGION,
@@ -325,7 +328,8 @@ if __name__ == "__main__":
     except Exception as e:
         logging.error(f"FATAL: Failed to initialize AnthropicBedrock client: {e}")
         logging.error("Ensure AWS credentials (AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY) and region are configured correctly (environment variables or ~/.aws/credentials).")
-        sys.exit(1)
+        # Raise an exception
+        raise ConnectionError(f"Failed to initialize Bedrock client: {e}")
 
     logging.info("Starting CSV processing (Geocoding and Categorization)...")
     logging.info(f"Input directory: {INPUT_DIR}")
@@ -340,8 +344,8 @@ if __name__ == "__main__":
     csv_files = glob.glob(os.path.join(INPUT_DIR, '*.csv'))
 
     if not csv_files:
-        logging.warning(f"No CSV files found in {INPUT_DIR}. Exiting.")
-        sys.exit(0)
+        logging.warning(f"No CSV files found in {INPUT_DIR}. Skipping processing step.")
+        return # Don't raise an error, just return if no files
 
     logging.info(f"Found {len(csv_files)} CSV files to process.")
 
@@ -391,7 +395,17 @@ if __name__ == "__main__":
 
     if failed_count > 0:
         logging.warning("Some files failed during processing. Check logs above for details.")
-        sys.exit(1) # Exit with error code if any file failed
+        # Raise an exception to signal failure to the orchestrator
+        raise RuntimeError(f"{failed_count} files failed during CSV processing.")
     else:
         logging.info("All files processed successfully.")
-        sys.exit(0) # Exit successfully 
+        # No need to exit or return anything specific on success
+
+# --- Main Execution Block (Updated) ---
+if __name__ == "__main__":
+    try:
+        run_processing()
+        sys.exit(0) # Explicit success exit
+    except Exception as e:
+        logging.error(f"An error occurred during CSV processing: {e}")
+        sys.exit(1) # Explicit failure exit 
