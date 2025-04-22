@@ -1,12 +1,21 @@
-# Palo Alto Police Report Analysis
+# Palo Alto Police Log Report Analysis
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project provides an end-to-end pipeline to download, process, and analyze daily police report logs (PDFs) from the City of Palo Alto's public portal. The goal is to extract structured incident data (type, time, location), enhance it with geocoding and categorization, and prepare it for visualization and further analysis.
+## Overview & Data Sources
+This project provides an end-to-end pipeline to download, process, and analyze daily police report logs (PDFs) from [Palo Alto Police Department's public information portal](https://www.paloalto.gov/departments/police/public-information-portal/police-report-log). The goal is to extract structured incident data (type, time, location), enhance it with geocoding and categorization, and prepare it for visualization and further analysis.
 
 This repository is intended to be open-sourced to share the methodology and potentially enable adaptation for other similar public data sources.
 
-## Project Goal
+ The pipeline relies on generating URLs based on dates, as the portal itself may only display recent links. No guarantees are made about the continued availability or format of this source data.
+
+## Frontend Visualization (Website Submodule)
+
+This project includes an interactive frontend visualization component, managed as a Git submodule in the `website/` directory pointing to the [palo_alto_police_log_visualizer repository](https://github.com/ma08/palo_alto_police_log_visualizer). This Next.js application provides a map-based interface to explore the processed police incident data. A live deployment of the visualizer is available at [https://palo-alto-police-log-visualizer.vercel.app/](https://palo-alto-police-log-visualizer.vercel.app/).
+
+The main input to the visualization is the [website/public/data/incidents.json](website/public/data/incidents.json) file, which is the output of the data pipeline.
+
+## Project Goal & Data Pipeline
 
 The primary goal is to create a reproducible and automated workflow for transforming publicly available, unstructured police report PDFs into structured, analyzable data. Key objectives include:
 
@@ -17,20 +26,18 @@ The primary goal is to create a reproducible and automated workflow for transfor
 -   Standardizing offense descriptions using LLM-based categorization.
 -   Generating a clean, consolidated dataset suitable for frontend applications or data analysis tools.
 
-## Data Pipeline
-
 The core process involves several automated steps, orchestrated by `run_pipeline.py`, which calls functions imported from the relevant pipeline step modules:
 
 ```mermaid
 graph TD
-    A["Download PDFs<br>(pipeline/steps/step_1_download.py)<br>Input: Date Range<br>Output: data/raw_pdfs/"] --> B("Extract Markdown<br>(pipeline/steps/step_2_extract_text.py)<br>Input: data/raw_pdfs/<br>Output: markitdown_output/");
-    B --> C{"LLM Markdown to CSV<br>(pipeline/steps/step_3_extract_structured.py)<br>Input: markitdown_output/<br>Output: data/csv_files/"};
-    C --> D["Process CSVs<br>(pipeline/steps/step_4_process_data.py)<br>Geocode (Google) & Categorize (LLM)<br>Input: data/csv_files/<br>Output: data/processed_csv_files/"];
-    D --> E["Prepare Website Data<br>(pipeline/steps/step_5_prepare_output.py)<br>Input: data/processed_csv_files/<br>Output: website/public/data/incidents.json"];
+    A["Download PDFs<br>(pipeline/steps/step_1_download.py)<br><br>Input: Date Range<br><br>Output: data/raw_pdfs/"] --> B("Extract Markdown<br>(pipeline/steps/step_2_extract_text.py)<br><br>Input: data/raw_pdfs/<br><br>Output: markitdown_output/");
+    B --> C{"LLM Markdown to CSV<br>(pipeline/steps/step_3_extract_structured.py)<br><br>Input: markitdown_output/<br><br>Output: data/csv_files/"};
+    C --> D["Process CSVs<br>(pipeline/steps/step_4_process_data.py)<br><br>Geocode (Google) & Categorize (LLM)<br>Input: data/csv_files/<br><br>Output: data/processed_csv_files/"];
+    D --> E["Prepare Website Data<br>(pipeline/steps/step_5_prepare_output.py)<br><br>Input: data/processed_csv_files/<br><br>Output: website/public/data/incidents.json"];
     F["Source: Police Dept Website URL Pattern"] --> A;
     G["Google Places API"] --> D;
-    H["LLM API (e.g., Claude/Bedrock)"] --> C;
-    I["LLM API (e.g., Claude/Bedrock)"] --> D;
+    H["LLM API (Claude)"] --> C;
+    I["LLM API (Claude)"] --> D;
 
 ```
 
@@ -60,6 +67,8 @@ Intermediate and final data is stored in the following directories:
 
 ## Setup
 
+**NOTE:** Currently only Anthropic via AWS Bedrock is supported for LLM calls. Should be very easy to extend to other providers.
+
 ```bash
 # Clone the repository (including the website submodule)
 git clone --recurse-submodules [repository-url]
@@ -71,16 +80,14 @@ source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 
 # Install dependencies
 pip install -r requirements.txt
-# Required for Step 2: PDF to Markdown conversion
-pip install 'markitdown[pdf]'
 
 # Configure API Keys and Credentials
 cp .env.example .env
 # Edit .env with your credentials:
 # - Google Places API Key (for Step 4 Geocoding)
 # - AWS Credentials (Access Key ID, Secret Access Key, Region for Step 3 & 4 LLM calls via Bedrock)
+# 
 ```
-
 ## Usage
 
 The primary way to execute the pipeline is using the `run_pipeline.py` script.
@@ -133,10 +140,6 @@ python run_pipeline.py --start-date YYYY-MM-DD --end-date YYYY-MM-DD --start-ste
 -   `requirements.txt`: Core Python packages (now at root level).
 -   `.env.example`, `.env`: Configuration for API keys and credentials.
 -   `.gitignore`, `README.md`, etc.: Project configuration and documentation.
-
-## Data Sources
-
-All initial data is sourced from the [Palo Alto Police Department's public information portal](https://www.paloalto.gov/departments/police/public-information-portal/police-report-log). The pipeline relies on generating URLs based on dates, as the portal itself may only display recent links. No guarantees are made about the continued availability or format of this source data.
 
 ## Limitations
 
