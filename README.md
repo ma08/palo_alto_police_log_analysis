@@ -11,7 +11,7 @@ This repository is intended to be open-sourced to share the methodology and pote
 
 ## Frontend Visualization (Website Submodule)
 
-This project includes an interactive frontend visualization component, managed as a Git submodule in the `website/` directory pointing to the [palo_alto_police_log_visualizer repository](https://github.com/ma08/palo_alto_police_log_visualizer). This Next.js application provides a map-based interface to explore the processed police incident data. A live deployment of the visualizer is available at [https://palo-alto-police-log-visualizer.vercel.app/](https://palo-alto-police-log-visualizer.vercel.app/).
+This project includes an interactive frontend visualization component, managed as a Git submodule in the `website/` directory pointing to the [palo_alto_police_log_visualizer repository](https://github.com/ma08/palo_alto_police_log_visualizer). This Next.js application provides a map-based interface to explore the processed police incident data. A live deployment of the visualizer is available at [https://palo-alto-police-log-visualizer.vercel.app/](https://palo-alto-police-log-visualizer.vercel.app/). *Note: The current data visualized on the live deployment covers the period from February 18, 2025, to April 18, 2025.*
 
 The main input to the visualization is the [website/public/data/incidents.json](website/public/data/incidents.json) file, which is the output of the data pipeline.
 
@@ -36,8 +36,8 @@ graph TD
     D --> E["Prepare Website Data<br>(pipeline/steps/step_5_prepare_output.py)<br><br>Input: data/processed_csv_files/<br><br>Output: website/public/data/incidents.json"];
     F["Source: Police Dept Website URL Pattern"] --> A;
     G["Google Places API"] --> D;
-    H["LLM API (Claude)"] --> C;
-    I["LLM API (Claude)"] --> D;
+    H["LLM (Claude via Bedrock)"] --> C;
+    I["LLM (Claude via Bedrock)"] --> D;
 
 ```
 
@@ -147,7 +147,7 @@ python run_pipeline.py --start-date YYYY-MM-DD --end-date YYYY-MM-DD --start-ste
 -   **Extraction Accuracy:** Data quality depends heavily on the `markitdown` conversion accuracy and the LLM's ability to correctly parse the markdown and extract structured data. Errors or inconsistencies in the PDFs can lead to extraction failures or inaccuracies.
 -   **Geocoding Accuracy:** Relies on the Google Places API's ability to interpret location strings. Ambiguous or poorly formatted locations may result in incorrect or missing coordinates.
 -   **Categorization Subjectivity:** LLM-based offense categorization depends on the prompt and model used. Results may vary or require fine-tuning.
--   **API Keys & Costs:** Requires active, correctly configured API keys for Google Places and an LLM provider (e.g., AWS Bedrock). Use of these services incurs costs. Caching is implemented to mitigate this.
+-   **API Keys & Costs:** Requires active, correctly configured API keys for Google Places and an LLM provider (e.g., AWS Bedrock). Use of these services incurs costs, especially when processing large date ranges. Caching is implemented to mitigate this, but be mindful of potential charges.
 
 ## Contributing
 
