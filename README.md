@@ -23,14 +23,14 @@ The core process involves several automated steps, orchestrated by `run_pipeline
 
 ```mermaid
 graph TD
-    A[Download PDFs<br>(pipeline/steps/step_1_download.py)<br>Input: Date Range<br>Output: data/raw_pdfs/] --> B(Extract Markdown<br>(pipeline/steps/step_2_extract_text.py)<br>Input: data/raw_pdfs/<br>Output: markitdown_output/);
-    B --> C{LLM Markdown to CSV<br>(pipeline/steps/step_3_extract_structured.py)<br>Input: markitdown_output/<br>Output: data/csv_files/};
-    C --> D[Process CSVs<br>(pipeline/steps/step_4_process_data.py)<br>Geocode (Google) & Categorize (LLM)<br>Input: data/csv_files/<br>Output: data/processed_csv_files/];
-    D --> E[Prepare Website Data<br>(pipeline/steps/step_5_prepare_output.py)<br>Input: data/processed_csv_files/<br>Output: website/public/data/incidents.json];
-    F[Source: Police Dept Website URL Pattern] --> A;
-    G[Google Places API] --> D;
-    H[LLM API (e.g., Claude/Bedrock)] --> C;
-    I[LLM API (e.g., Claude/Bedrock)] --> D;
+    A["Download PDFs<br>(pipeline/steps/step_1_download.py)<br>Input: Date Range<br>Output: data/raw_pdfs/"] --> B("Extract Markdown<br>(pipeline/steps/step_2_extract_text.py)<br>Input: data/raw_pdfs/<br>Output: markitdown_output/");
+    B --> C{"LLM Markdown to CSV<br>(pipeline/steps/step_3_extract_structured.py)<br>Input: markitdown_output/<br>Output: data/csv_files/"};
+    C --> D["Process CSVs<br>(pipeline/steps/step_4_process_data.py)<br>Geocode (Google) & Categorize (LLM)<br>Input: data/csv_files/<br>Output: data/processed_csv_files/"];
+    D --> E["Prepare Website Data<br>(pipeline/steps/step_5_prepare_output.py)<br>Input: data/processed_csv_files/<br>Output: website/public/data/incidents.json"];
+    F["Source: Police Dept Website URL Pattern"] --> A;
+    G["Google Places API"] --> D;
+    H["LLM API (e.g., Claude/Bedrock)"] --> C;
+    I["LLM API (e.g., Claude/Bedrock)"] --> D;
 
 ```
 
@@ -152,4 +152,4 @@ Contributions are welcome! If you find issues or have suggestions for improvemen
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details (assuming a LICENSE file will be added).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
